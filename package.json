@@ -1,7 +1,8 @@
 {
   "name": "ts-utily",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Typescript utils library",
+  "homepage": "https://github.com/kemotx90/ts-utily#readme",
   "main": "dist/ts-utily.js",
   "types": "dist/ts-utily.d.ts",
   "type": "module",
@@ -13,7 +14,7 @@
     "test": "npx jest --coverage",
     "build": "rimraf dist && tsc && rollup -c",
     "publish": "npm publish",
-    "git:publish": "npm run git add -A src && git push",
+    "git:publish": "git add -A src && git push origin main",
     "documentation": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts"
   },
   "jest": {
@@ -28,7 +29,9 @@
     "number",
     "common",
     "collection",
-    "conversion"
+    "conversion",
+    "angular utils",
+    "react utils"
   ],
   "author": "Piero Solinas & Daniele Carlini",
   "license": "MIT",
