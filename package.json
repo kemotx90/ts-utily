@@ -1,0 +1,48 @@
+{
+  "name": "ts-utily",
+  "version": "1.1.9",
+  "description": "Typescript utils library",
+  "main": "dist/ts-utily.js",
+  "types": "dist/ts-utily.d.ts",
+  "type": "module",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "live:test": "npx jest --watch",
+    "test": "npx jest --coverage",
+    "build": "rimraf dist && tsc && rollup -c",
+    "publish": "npm publish",
+    "git:publish": "npm run git add -A src && git push",
+    "documentation": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "typescript",
+    "utils",
+    "utility",
+    "string",
+    "number",
+    "common",
+    "collection",
+    "conversion"
+  ],
+  "author": "Piero Solinas & Daniele Carlini",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.9.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.4.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-jest": "^29.1.1",
+    "typedoc": "^0.25.3",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typescript": "^5.2.2"
+  }
+}
