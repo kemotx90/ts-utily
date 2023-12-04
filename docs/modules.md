@@ -32,6 +32,7 @@
 - [percentage](modules.md#percentage)
 - [present](modules.md#present)
 - [removeDuplicateByKey](modules.md#removeduplicatebykey)
+- [removeDuplicateByKeys](modules.md#removeduplicatebykeys)
 - [removeWhiteSpace](modules.md#removewhitespace)
 - [replaceAll](modules.md#replaceall)
 - [sortByObjectValues](modules.md#sortbyobjectvalues)
@@ -69,7 +70,7 @@ the element at the specified index in the collection. If the collection is empty
 
 #### Defined in
 
-utils/collection-utils.ts:29
+[utils/collection-utils.ts:29](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L29)
 
 ___
 
@@ -93,7 +94,7 @@ The `capitalize` function returns a string.
 
 #### Defined in
 
-utils/string-utils.ts:55
+[utils/string-utils.ts:55](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L55)
 
 ___
 
@@ -117,7 +118,7 @@ The function `capitalizeFully` returns a string.
 
 #### Defined in
 
-utils/string-utils.ts:68
+[utils/string-utils.ts:68](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L68)
 
 ___
 
@@ -142,7 +143,7 @@ a number. If `s1` is lexicographically less than `s2` (ignoring case), it return
 
 #### Defined in
 
-utils/string-utils.ts:83
+[utils/string-utils.ts:83](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L83)
 
 ___
 
@@ -172,7 +173,7 @@ a `Map<string, V>` or `undefined`.
 
 #### Defined in
 
-utils/conversion-utils.ts:8
+[utils/conversion-utils.ts:8](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/conversion-utils.ts#L8)
 
 ___
 
@@ -202,7 +203,7 @@ an object with index signatures, where the keys are strings and the values are o
 
 #### Defined in
 
-utils/conversion-utils.ts:20
+[utils/conversion-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/conversion-utils.ts#L20)
 
 ___
 
@@ -233,7 +234,7 @@ an array of type T.
 
 #### Defined in
 
-utils/collection-utils.ts:62
+[utils/collection-utils.ts:62](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L62)
 
 ___
 
@@ -264,7 +265,7 @@ a boolean value.
 
 #### Defined in
 
-utils/collection-utils.ts:76
+[utils/collection-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L76)
 
 ___
 
@@ -296,7 +297,7 @@ a value of type T.
 
 #### Defined in
 
-utils/collection-utils.ts:91
+[utils/collection-utils.ts:91](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L91)
 
 ___
 
@@ -326,7 +327,7 @@ an array of type T.
 
 #### Defined in
 
-utils/collection-utils.ts:40
+[utils/collection-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L40)
 
 ___
 
@@ -357,7 +358,7 @@ The function `getOrDefault` returns the value of `data` if it is not null or und
 
 #### Defined in
 
-utils/common-utils.ts:36
+[utils/common-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/common-utils.ts#L36)
 
 ___
 
@@ -388,7 +389,7 @@ an array of type T.
 
 #### Defined in
 
-utils/collection-utils.ts:51
+[utils/collection-utils.ts:51](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L51)
 
 ___
 
@@ -413,7 +414,7 @@ The function `getOrDefault` returns a string value.
 
 #### Defined in
 
-utils/string-utils.ts:40
+[utils/string-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L40)
 
 ___
 
@@ -438,7 +439,7 @@ The function `includes` returns a boolean value.
 
 #### Defined in
 
-utils/string-utils.ts:10
+[utils/string-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L10)
 
 ___
 
@@ -468,7 +469,7 @@ a boolean value indicating whether the collection is empty or not.
 
 #### Defined in
 
-utils/collection-utils.ts:9
+[utils/collection-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L9)
 
 ___
 
@@ -492,7 +493,7 @@ The function `isEmpty` returns a boolean value.
 
 #### Defined in
 
-utils/string-utils.ts:20
+[utils/string-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L20)
 
 ___
 
@@ -522,7 +523,7 @@ The function `isEqual` returns a boolean value.
 
 #### Defined in
 
-utils/common-utils.ts:46
+[utils/common-utils.ts:46](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/common-utils.ts#L46)
 
 ___
 
@@ -552,7 +553,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-utils/collection-utils.ts:19
+[utils/collection-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L19)
 
 ___
 
@@ -576,7 +577,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-utils/string-utils.ts:30
+[utils/string-utils.ts:30](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L30)
 
 ___
 
@@ -606,7 +607,7 @@ a boolean value.
 
 #### Defined in
 
-utils/number-utils.ts:19
+[utils/number-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/number-utils.ts#L19)
 
 ___
 
@@ -636,7 +637,7 @@ a boolean value indicating whether the input object is a string or not.
 
 #### Defined in
 
-utils/string-utils.ts:93
+[utils/string-utils.ts:93](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L93)
 
 ___
 
@@ -666,13 +667,13 @@ a boolean value.
 
 #### Defined in
 
-utils/common-utils.ts:26
+[utils/common-utils.ts:26](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/common-utils.ts#L26)
 
 ___
 
 ### parzializeArray
 
-▸ **parzializeArray**\<`T`\>(`array`, `sezione`): `undefined` \| `T`[][]
+▸ **parzializeArray**\<`T`\>(`array`, `section`): `undefined` \| `T`[][]
 
 The function `parzializeArray` takes an array and a section size as input and returns an array of arrays, where each subarray contains a section of the original array.
 
@@ -687,7 +688,7 @@ The function `parzializeArray` takes an array and a section size as input and re
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `array` | `undefined` \| ``null`` \| `T`[] | The `array` parameter is an array of elements of type `T`, or it can be `undefined` or `null`. |
-| `sezione` | `number` | The parameter "sezione" represents the size of each section or chunk that the array will be divided into. |
+| `section` | `number` | The parameter "section" represents the size of each section or chunk that the array will be divided into. |
 
 #### Returns
 
@@ -697,7 +698,7 @@ an array of arrays of type T, or undefined.
 
 #### Defined in
 
-utils/collection-utils.ts:115
+[utils/collection-utils.ts:133](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L133)
 
 ___
 
@@ -722,7 +723,7 @@ a number, which is the calculated percentage value.
 
 #### Defined in
 
-utils/number-utils.ts:33
+[utils/number-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/number-utils.ts#L33)
 
 ___
 
@@ -752,7 +753,7 @@ a boolean value.
 
 #### Defined in
 
-utils/common-utils.ts:15
+[utils/common-utils.ts:15](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/common-utils.ts#L15)
 
 ___
 
@@ -783,7 +784,38 @@ The function `rimuoviDuplicatiByKey` returns an array of type `T[]`.
 
 #### Defined in
 
-utils/collection-utils.ts:103
+[utils/collection-utils.ts:103](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L103)
+
+___
+
+### removeDuplicateByKeys
+
+▸ **removeDuplicateByKeys**\<`T`\>(`collection`, `keys`): `T`[]
+
+The `removeDuplicateByKeys` function removes duplicate elements from a collection based on specified keys.
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`. |
+| `keys` | keyof `T`[] | The `keys` parameter is an array of keys that are used to determine uniqueness in the collection. Each element in the array represents a key in the objects of the collection. |
+
+#### Returns
+
+`T`[]
+
+an array of type T, which is the collection with duplicate elements removed based on the specified keys.
+
+#### Defined in
+
+[utils/collection-utils.ts:115](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/collection-utils.ts#L115)
 
 ___
 
@@ -807,7 +839,7 @@ a string with all whitespace characters removed.
 
 #### Defined in
 
-utils/string-utils.ts:102
+[utils/string-utils.ts:102](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L102)
 
 ___
 
@@ -833,7 +865,7 @@ The function `replaceAll` returns a string.
 
 #### Defined in
 
-utils/string-utils.ts:125
+[utils/string-utils.ts:125](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L125)
 
 ___
 
@@ -889,7 +921,7 @@ array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN',...], false))
 
 #### Defined in
 
-utils/sort-utils.ts:32
+[utils/sort-utils.ts:32](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/sort-utils.ts#L32)
 
 ___
 
@@ -914,7 +946,7 @@ a number.
 
 #### Defined in
 
-utils/string-utils.ts:135
+[utils/string-utils.ts:135](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L135)
 
 ___
 
@@ -940,7 +972,7 @@ The ternaryOperator function returns either s2 or s1 based on the value of the c
 
 #### Defined in
 
-utils/string-utils.ts:114
+[utils/string-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/string-utils.ts#L114)
 
 ___
 
@@ -964,7 +996,7 @@ a boolean value.
 
 #### Defined in
 
-utils/boolean-utils.ts:9
+[utils/boolean-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/boolean-utils.ts#L9)
 
 ___
 
@@ -994,4 +1026,4 @@ a number.
 
 #### Defined in
 
-utils/number-utils.ts:9
+[utils/number-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/927e22a/src/utils/number-utils.ts#L9)

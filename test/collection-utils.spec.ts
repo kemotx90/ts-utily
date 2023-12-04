@@ -6,7 +6,7 @@ import {
     get,
     getOrDefaultCollection,
     isEmptyCollection,
-    isNotEmptyCollection, parzializeArray, removeDuplicateByKey
+    isNotEmptyCollection, parzializeArray, removeDuplicateByKey, removeDuplicateByKeys
 } from "../src/index";
 
 test('isEmptyCollection true', () => {
@@ -80,6 +80,11 @@ test('findOrDefault', () => {
 test('removeDuplicateByKey', () => {
     expect(removeDuplicateByKey([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], "id")).toStrictEqual([{id:'a', value:1}, {id:'z', value:0}]);
     expect(removeDuplicateByKey([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], "value")).toStrictEqual([{id:'z', value:0}, {id:'a', value:1}]);
+});
+
+test('removeDuplicateByKeys', () => {
+    expect(removeDuplicateByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'a', value:1}, {id:'z', value:0}], ["id", "value"])).toStrictEqual([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}]);
+    expect(removeDuplicateByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'a', value:1}, {id:'z', value:0}], ["id"])).toStrictEqual([{id:'a', value:1}, {id:'z', value:0}]);
 });
 
 test('parzializeArray', () => {

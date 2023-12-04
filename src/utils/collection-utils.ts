@@ -107,17 +107,35 @@ export const removeDuplicateByKey = <T>(collection: T[] | undefined | null, key?
 }
 
 /**
+ * The `removeDuplicateByKeys` function removes duplicate elements from a collection based on specified keys.
+ * @param {T[] | undefined | null} collection - The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`.
+ * @param keys - The `keys` parameter is an array of keys that are used to determine uniqueness in the collection. Each element in the array represents a key in the objects of the collection.
+ * @returns an array of type T, which is the collection with duplicate elements removed based on the specified keys.
+ */
+export const removeDuplicateByKeys = <T>(collection: T[] | undefined | null, keys: Array<keyof T>): T[] => {
+    if (isEmptyCollection(collection)) return get(collection);
+    else if (isEmptyCollection(keys)) return collection!;
+
+    return Object.values(
+        collection!.reduce((a: any, c: T) => {
+            const compositeKey: any = keys.map(el => c[el]).join('|');
+            a[compositeKey] = c;
+            return a
+        }, {}));
+}
+
+/**
  * The function `parzializeArray` takes an array and a section size as input and returns an array of arrays, where each subarray contains a section of the original array.
  * @param {T[] | undefined | null} array - The `array` parameter is an array of elements of type `T`, or it can be `undefined` or `null`.
- * @param {number} sezione - The parameter "sezione" represents the size of each section or chunk that the array will be divided into.
+ * @param {number} section - The parameter "section" represents the size of each section or chunk that the array will be divided into.
  * @returns an array of arrays of type T, or undefined.
  */
-export const parzializeArray = <T>(array: T[] | undefined | null, sezione: number): T[][] | undefined => {
+export const parzializeArray = <T>(array: T[] | undefined | null, section: number): T[][] | undefined => {
     if (isEmptyCollection(array)) return undefined;
 
     const parzializedArray: Array<T[]> = [];
-    for (let i: number = 0; i < array!.length; i += sezione) {
-        parzializedArray.push(array!.slice(i, i + sezione));
+    for (let i: number = 0; i < array!.length; i += section) {
+        parzializedArray.push(array!.slice(i, i + section));
     }
     return parzializedArray;
 }
