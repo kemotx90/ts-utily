@@ -118,7 +118,7 @@ export const removeDuplicateByKeys = <T>(collection: T[] | undefined | null, key
 
     return Object.values(
         collection!.reduce((a: any, c: T) => {
-            const compositeKey: any = keys.map(el => c[el]).join('|');
+            const compositeKey: string = keys.map(el => c[el]).join('|');
             a[compositeKey] = c;
             return a
         }, {}));
@@ -132,10 +132,30 @@ export const removeDuplicateByKeys = <T>(collection: T[] | undefined | null, key
  */
 export const parzializeArray = <T>(array: T[] | undefined | null, section: number): T[][] | undefined => {
     if (isEmptyCollection(array)) return undefined;
+    else if (notPresent(section)) return undefined;
 
     const parzializedArray: Array<T[]> = [];
     for (let i: number = 0; i < array!.length; i += section) {
         parzializedArray.push(array!.slice(i, i + section));
+    }
+    return parzializedArray;
+}
+
+/**
+ * The function `parzializeArrayByKeys` takes an array of objects and an array of keys, and returns a partially grouped array based on the specified keys.
+ * @param {T[] | undefined | null} array - The `array` parameter is an array of objects of type `T`, or it can be `undefined` or `null`.
+ * @param keys - An array of keys that represent the properties of the objects in the array.
+ * @returns The function `parzializeArrayByKeys` returns an array of arrays of type `T`, or `undefined`.
+ */
+export const parzializeArrayByKeys = <T>(array: T[] | undefined | null, keys: Array<keyof T>): T[][] | undefined => {
+    if (isEmptyCollection(array)) return undefined;
+    else if (isEmptyCollection(keys)) return undefined;
+
+    const compositeKeyArray: string[] = [...new Set(array!.map(a => keys.map(el => a[el]).join('|')))];
+
+    const parzializedArray: Array<T[]> = [];
+    for (let i: number = 0; i < compositeKeyArray.length; i ++) {
+        parzializedArray.push(array!.filter(a => compositeKeyArray[i] === keys.map(el => a[el]).join('|')));
     }
     return parzializedArray;
 }

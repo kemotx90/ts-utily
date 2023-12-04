@@ -6,7 +6,7 @@ import {
     get,
     getOrDefaultCollection,
     isEmptyCollection,
-    isNotEmptyCollection, parzializeArray, removeDuplicateByKey, removeDuplicateByKeys
+    isNotEmptyCollection, parzializeArray, parzializeArrayByKeys, removeDuplicateByKey, removeDuplicateByKeys
 } from "../src/index";
 
 test('isEmptyCollection true', () => {
@@ -92,4 +92,14 @@ test('parzializeArray', () => {
     expect(parzializeArray([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], 2)).toStrictEqual([[{id:'a', value:0}, {id:'a', value:1}], [{id:'z', value:0}]]);
     expect(parzializeArray([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], 3)).toStrictEqual([[{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}]]);
     expect(parzializeArray([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], 100)).toStrictEqual([[{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}]]);
+    expect(parzializeArray([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], undefined!)).toBe(undefined);
+    expect(parzializeArray(undefined, 6)).toBe(undefined);
+});
+
+test('parzializeArrayByKeys', () => {
+    expect(parzializeArrayByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], ['id'])).toStrictEqual([[{id:'a', value:0}, {id:'a', value:1}], [{id:'z', value:0}]]);
+    expect(parzializeArrayByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], ['id','value'])).toStrictEqual([[{id:'a', value:0}], [{id:'a', value:1}], [{id:'z', value:0}]]);
+    expect(parzializeArrayByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], ['value'])).toStrictEqual([[{id:'a', value:0}, {id:'z', value:0}], [{id:'a', value:1}]]);
+    expect(parzializeArrayByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], undefined!)).toBe(undefined);
+    expect(parzializeArrayByKeys(undefined, ['value'])).toBe(undefined);
 });
