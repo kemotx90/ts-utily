@@ -14,7 +14,7 @@
     "test": "npx jest --coverage",
     "build": "rimraf dist && tsc && rollup -c",
     "publish": "npm publish",
-    "git:publish": "git add . src && git commit -m && git remote -v && git push origin main",
+    "git:publish": "git add . && git commit -m && git remote -v && git push origin main",
     "documentation": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts"
   },
   "jest": {
