@@ -33,9 +33,10 @@ test('isNotEmptyCollection true', () => {
     expect(isNotEmptyCollection([{}])).toBe(true);
 });
 
-test('at true', () => {
+test('at', () => {
     expect(at(['a'], 0)).toBe('a');
     expect(at(['a', 'z'], 1)).toBe('z');
+    expect(at(['a'], 14)).toBe(undefined);
     expect(at(null, 0)).toBe(undefined);
     expect(at(undefined, 1)).toBe(undefined);
 });
@@ -64,6 +65,8 @@ test('deleteElementCollection', () => {
 test('equalsCollection', () => {
     expect(equalsCollection(['a'], ['n'])).toStrictEqual(false);
     expect(equalsCollection(['a', 'z'], ['a', 'z'])).toStrictEqual(true);
+    expect(equalsCollection(['a', 'z'], [])).toStrictEqual(false);
+    expect(equalsCollection(['a', 'z'], ['n'])).toStrictEqual(false);
     expect(equalsCollection(null, ['n'])).toStrictEqual(false);
     expect(equalsCollection(null, null)).toStrictEqual(true);
     expect(equalsCollection(undefined, ['n'])).toStrictEqual(false);
@@ -80,11 +83,20 @@ test('findOrDefault', () => {
 test('removeDuplicateByKey', () => {
     expect(removeDuplicateByKey([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], "id")).toStrictEqual([{id:'a', value:1}, {id:'z', value:0}]);
     expect(removeDuplicateByKey([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}], "value")).toStrictEqual([{id:'z', value:0}, {id:'a', value:1}]);
+    expect(removeDuplicateByKey(undefined, "a")).toStrictEqual([]);
+    expect(removeDuplicateByKey([], "a")).toStrictEqual([]);
+    expect(removeDuplicateByKey([{id:'a', value:0}], null!)).toStrictEqual([{id:'a', value:0}]);
+    expect(removeDuplicateByKey([{id:'a', value:0}], undefined!)).toStrictEqual([{id:'a', value:0}]);
 });
 
 test('removeDuplicateByKeys', () => {
     expect(removeDuplicateByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'a', value:1}, {id:'z', value:0}], ["id", "value"])).toStrictEqual([{id:'a', value:0}, {id:'a', value:1}, {id:'z', value:0}]);
     expect(removeDuplicateByKeys([{id:'a', value:0}, {id:'a', value:1}, {id:'a', value:1}, {id:'z', value:0}], ["id"])).toStrictEqual([{id:'a', value:1}, {id:'z', value:0}]);
+    expect(removeDuplicateByKeys(undefined, ["a"])).toStrictEqual([]);
+    expect(removeDuplicateByKeys([], ["a"])).toStrictEqual([]);
+    expect(removeDuplicateByKeys([{id:'a', value:0}], [])).toStrictEqual([{id:'a', value:0}]);
+    expect(removeDuplicateByKeys([{id:'a', value:0}], null!)).toStrictEqual([{id:'a', value:0}]);
+    expect(removeDuplicateByKeys([{id:'a', value:0}], undefined!)).toStrictEqual([{id:'a', value:0}]);
 });
 
 test('parzializeArray', () => {
