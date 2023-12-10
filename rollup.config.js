@@ -8,5 +8,6 @@ export default {
         file: 'dist/ts-utily.js',
         format: 'cjs'
     },
+    external: ['node:buffer'],
     plugins: [typescript(), terser()]
 };

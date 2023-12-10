@@ -6,44 +6,91 @@
 
 ### Functions
 
-- [at](#at)
-- [capitalize](#capitalize)
-- [capitalizeFully](#capitalizefully)
-- [compare](#compare)
-- [convertIndexSignaturesToMap](#convertindexsignaturestomap)
-- [convertMapToIndexSignatures](#convertmaptoindexsignatures)
-- [deleteElementCollection](#deleteelementcollection)
-- [equalsCollection](#equalscollection)
-- [findOrDefault](#findordefault)
-- [get](#get)
-- [getOrDefault](#getordefault)
-- [getOrDefaultCollection](#getordefaultcollection)
-- [getOrDefaultString](#getordefaultstring)
-- [includes](#includes)
-- [isEmptyCollection](#isemptycollection)
-- [isEmptyString](#isemptystring)
-- [isEqual](#isequal)
-- [isNotEmptyCollection](#isnotemptycollection)
-- [isNotEmptyString](#isnotemptystring)
-- [isNumber](#isnumber)
-- [isString](#isstring)
-- [notPresent](#notpresent)
-- [parzializeArray](#parzializearray)
-- [parzializeArrayByKeys](#parzializearraybykeys)
-- [percentage](#percentage)
-- [present](#present)
-- [removeDuplicateByKey](#removeduplicatebykey)
-- [removeDuplicateByKeys](#removeduplicatebykeys)
-- [removeNullOrUndefinedFieldsFromObject](#removenullorundefinedfieldsfromobject)
-- [removeWhiteSpace](#removewhitespace)
-- [replaceAll](#replaceall)
-- [sortByObjectValues](#sortbyobjectvalues)
-- [sortNumericString](#sortnumericstring)
-- [ternaryOperator](#ternaryoperator)
-- [toBoolean](#toboolean)
-- [toNumber](#tonumber)
+- [addDays](adddays)
+- [at](at)
+- [capitalize](capitalize)
+- [capitalizeFully](capitalizefully)
+- [compare](compare)
+- [convertIndexSignaturesToMap](convertindexsignaturestomap)
+- [convertMapToIndexSignatures](convertmaptoindexsignatures)
+- [createBlobFromBase64AndMimeType](createblobfrombase64andmimetype)
+- [createBufferFromBase64](createbufferfrombase64)
+- [createFileFromBase64AndMimeType](createfilefrombase64andmimetype)
+- [dateWith00Mins](datewith00mins)
+- [dayBetween](daybetween)
+- [deleteElementCollection](deleteelementcollection)
+- [equalsCollection](equalscollection)
+- [findOrDefault](findordefault)
+- [get](get)
+- [getExtensionFromFileName](getextensionfromfilename)
+- [getHoursAndMinutesFromDateAsString](gethoursandminutesfromdateasstring)
+- [getMimeTypeFromExtension](getmimetypefromextension)
+- [getNextDayOfWeekFromDate](getnextdayofweekfromdate)
+- [getOrDefault](getordefault)
+- [getOrDefaultCollection](getordefaultcollection)
+- [getOrDefaultString](getordefaultstring)
+- [getTomorrow](gettomorrow)
+- [hoursBetween](hoursbetween)
+- [includes](includes)
+- [instantToDate](instanttodate)
+- [isAfter](isafter)
+- [isBefore](isbefore)
+- [isBetween](isbetween)
+- [isEmptyCollection](isemptycollection)
+- [isEmptyString](isemptystring)
+- [isEqual](isequal)
+- [isNotEmptyCollection](isnotemptycollection)
+- [isNotEmptyString](isnotemptystring)
+- [isNumber](isnumber)
+- [isString](isstring)
+- [monthFromDate](monthfromdate)
+- [notPresent](notpresent)
+- [parzializeArray](parzializearray)
+- [parzializeArrayByKeys](parzializearraybykeys)
+- [percentage](percentage)
+- [present](present)
+- [removeDays](removedays)
+- [removeDuplicateByKey](removeduplicatebykey)
+- [removeDuplicateByKeys](removeduplicatebykeys)
+- [removeNullOrUndefinedFieldsFromObject](removenullorundefinedfieldsfromobject)
+- [removeWhiteSpace](removewhitespace)
+- [replaceAll](replaceall)
+- [sameDate](samedate)
+- [sortByObjectValues](sortbyobjectvalues)
+- [sortNumericString](sortnumericstring)
+- [ternaryOperator](ternaryoperator)
+- [toBoolean](toboolean)
+- [toLocalDate](tolocaldate)
+- [toLocalDateTime](tolocaldatetime)
+- [toNumber](tonumber)
+- [typizeBlobFromFileName](typizeblobfromfilename)
 
 ## Functions
+
+### addDays
+
+▸ **addDays**(`d`, `days?`): `Date`
+
+Adds specified number of days to a given Date object.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `d` | `Date` | `undefined` | The Date object to which days are to be added. |
+| `days` | `number` | `1` | The number of days to be added. Defaults to 1 if not provided. |
+
+#### Returns
+
+`Date`
+
+- The updated Date object with additional days.
+
+#### Defined in
+
+utils/date-utils.ts:88
+
+___
 
 ### at
 
@@ -72,7 +119,7 @@ the element at the specified index in the collection. If the collection is empty
 
 #### Defined in
 
-[utils/collection-utils.ts:29](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L29)
+[utils/collection-utils.ts:29](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L29)
 
 ___
 
@@ -96,7 +143,7 @@ The `capitalize` function returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:55](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L55)
+[utils/string-utils.ts:55](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L55)
 
 ___
 
@@ -120,7 +167,7 @@ The function `capitalizeFully` returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:68](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L68)
+[utils/string-utils.ts:68](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L68)
 
 ___
 
@@ -145,7 +192,7 @@ a number. If `s1` is lexicographically less than `s2` (ignoring case), it return
 
 #### Defined in
 
-[utils/string-utils.ts:83](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L83)
+[utils/string-utils.ts:83](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L83)
 
 ___
 
@@ -175,7 +222,7 @@ a `Map<string, V>` or `undefined`.
 
 #### Defined in
 
-[utils/conversion-utils.ts:8](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/conversion-utils.ts#L8)
+[utils/conversion-utils.ts:8](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/conversion-utils.ts#L8)
 
 ___
 
@@ -205,7 +252,132 @@ an object with index signatures, where the keys are strings and the values are o
 
 #### Defined in
 
-[utils/conversion-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/conversion-utils.ts#L20)
+[utils/conversion-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/conversion-utils.ts#L20)
+
+___
+
+### createBlobFromBase64AndMimeType
+
+▸ **createBlobFromBase64AndMimeType**(`base64`, `MIME_Type`): `Blob`
+
+Create a Blob object from the given base64 string and MIME type.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `base64` | `string` | The base64 string. |
+| `MIME_Type` | `MimeTypeEnum` | The MIME type of the Blob. |
+
+#### Returns
+
+`Blob`
+
+- The Blob object.
+
+#### Defined in
+
+utils/file-utils.ts:60
+
+___
+
+### createBufferFromBase64
+
+▸ **createBufferFromBase64**(`base64`): `Buffer`
+
+Creates a Buffer from a given base64 string.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `base64` | `string` | The base64 string to convert to a Buffer. |
+
+#### Returns
+
+`Buffer`
+
+- The Buffer representation of the base64 string.
+
+#### Defined in
+
+utils/file-utils.ts:49
+
+___
+
+### createFileFromBase64AndMimeType
+
+▸ **createFileFromBase64AndMimeType**(`base64`, `MIME_Type`, `fileName`): `File`
+
+Creates a file from a base64 encoded string and MIME type.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `base64` | `string` | The base64 encoded string representing the file. |
+| `MIME_Type` | `MimeTypeEnum` | The MIME type of the file. |
+| `fileName` | `string` | The name of the file. |
+
+#### Returns
+
+`File`
+
+- The created file object.
+
+#### Defined in
+
+utils/file-utils.ts:72
+
+___
+
+### dateWith00Mins
+
+▸ **dateWith00Mins**(`date?`): `Date`
+
+Sets the minutes, seconds, and milliseconds of the given date to 0.
+If no date is provided, the current date and time will be used.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `date?` | `number` \| `Date` | The date to modify. If not provided, the current date and time will be used. |
+
+#### Returns
+
+`Date`
+
+The modified date.
+
+#### Defined in
+
+utils/date-utils.ts:222
+
+___
+
+### dayBetween
+
+▸ **dayBetween**(`d1`, `d2`): `number`
+
+Calculates the number of days between two dates.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d1` | `Date` | The first date. |
+| `d2` | `Date` | The second date. |
+
+#### Returns
+
+`number`
+
+The number of days between the two dates.
+
+#### Defined in
+
+utils/date-utils.ts:114
 
 ___
 
@@ -236,7 +408,7 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:62](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L62)
+[utils/collection-utils.ts:62](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L62)
 
 ___
 
@@ -267,7 +439,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/collection-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L76)
+[utils/collection-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L76)
 
 ___
 
@@ -299,7 +471,7 @@ a value of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:91](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L91)
+[utils/collection-utils.ts:91](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L91)
 
 ___
 
@@ -329,7 +501,107 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L40)
+[utils/collection-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L40)
+
+___
+
+### getExtensionFromFileName
+
+▸ **getExtensionFromFileName**(`fileName`): `undefined` \| `string`
+
+Retrieves the file extension from a file name.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fileName` | `string` | The file name. |
+
+#### Returns
+
+`undefined` \| `string`
+
+- The corresponding file extension.
+
+#### Defined in
+
+utils/file-utils.ts:22
+
+___
+
+### getHoursAndMinutesFromDateAsString
+
+▸ **getHoursAndMinutesFromDateAsString**(`d`, `locales`, `hour?`, `minute?`): ``null`` \| `string`
+
+Converts a given date or number into a string representation of hours and minutes.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `d` | `undefined` \| ``null`` \| `number` \| `Date` | `undefined` | The date or number to convert. |
+| `locales` | `LocalesArgument` | `undefined` | The locales argument for the `toLocaleTimeString` method. |
+| `hour?` | ``"numeric"`` \| ``"2-digit"`` | `"2-digit"` | The format of the hour: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit". |
+| `minute?` | ``"numeric"`` \| ``"2-digit"`` | `"2-digit"` | The format of the minute: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit". |
+
+#### Returns
+
+``null`` \| `string`
+
+The string representation of the hours and minutes, or null if the input is null or undefined.
+
+#### Defined in
+
+utils/date-utils.ts:171
+
+___
+
+### getMimeTypeFromExtension
+
+▸ **getMimeTypeFromExtension**(`extension`): `string`
+
+Retrieves the MIME type from a file extension.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `extension` | `string` | The file extension. |
+
+#### Returns
+
+`string`
+
+- The corresponding MIME type.
+
+#### Defined in
+
+utils/file-utils.ts:12
+
+___
+
+### getNextDayOfWeekFromDate
+
+▸ **getNextDayOfWeekFromDate**(`date`, `dayOfWeek`): `Date`
+
+Gets the next occurrence of a specified day of the week from a given date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `date` | `undefined` \| ``null`` \| `number` \| `Date` | The date from which to start searching. If not provided or invalid, the current date will be used. |
+| `dayOfWeek` | `DayOfWeek` | The day of the week to find the next occurrence of. |
+
+#### Returns
+
+`Date`
+
+- The next occurrence of the specified day of the week.
+
+#### Defined in
+
+utils/date-utils.ts:140
 
 ___
 
@@ -360,7 +632,7 @@ The function `getOrDefault` returns the value of `data` if it is not null or und
 
 #### Defined in
 
-[utils/common-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/common-utils.ts#L36)
+[utils/common-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/common-utils.ts#L36)
 
 ___
 
@@ -391,7 +663,7 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:51](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L51)
+[utils/collection-utils.ts:51](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L51)
 
 ___
 
@@ -416,7 +688,57 @@ The function `getOrDefault` returns a string value.
 
 #### Defined in
 
-[utils/string-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L40)
+[utils/string-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L40)
+
+___
+
+### getTomorrow
+
+▸ **getTomorrow**(`d?`): `Date`
+
+Returns tomorrow's date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d?` | `number` \| `Date` | Optional date to be used as the base. |
+
+#### Returns
+
+`Date`
+
+- Tomorrow's date.
+
+#### Defined in
+
+utils/date-utils.ts:156
+
+___
+
+### hoursBetween
+
+▸ **hoursBetween**(`d1`, `d2`, `withAbs?`): `number`
+
+Calculates the number of hours between two given dates.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `d1` | `Date` | `undefined` | The first date. |
+| `d2` | `Date` | `undefined` | The second date. |
+| `withAbs?` | `boolean` | `true` | Whether to return the absolute difference or not. |
+
+#### Returns
+
+`number`
+
+The number of hours between the two dates.
+
+#### Defined in
+
+utils/date-utils.ts:127
 
 ___
 
@@ -441,7 +763,116 @@ The function `includes` returns a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L10)
+[utils/string-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L10)
+
+___
+
+### instantToDate
+
+▸ **instantToDate**(`instant?`): `Date`
+
+Converts the given instant to a Date object.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `instant?` | `string` \| `Date` | The instant to convert. If not provided, the current date and time is used. |
+
+#### Returns
+
+`Date`
+
+- The converted Date object.
+
+**`Example`**
+
+```ts
+use for convert Instant(like as java object) to javascript date
+```
+
+#### Defined in
+
+utils/date-utils.ts:184
+
+___
+
+### isAfter
+
+▸ **isAfter**(`d1`, `d2`, `matchOnlyForYearMonthDay?`): `boolean`
+
+Checks if a given date is after another date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d1` | `Date` | The first date. |
+| `d2` | `Date` | The second date. |
+| `matchOnlyForYearMonthDay?` | `boolean` | Optional parameter to match only up to year, month, and day. |
+
+#### Returns
+
+`boolean`
+
+- Returns true if d1 is after d2, otherwise returns false.
+
+#### Defined in
+
+utils/date-utils.ts:36
+
+___
+
+### isBefore
+
+▸ **isBefore**(`d1`, `d2`, `matchOnlyForYearMonthDay?`): `boolean`
+
+Determines if the given date is before the reference date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d1` | `Date` | The date to compare. |
+| `d2` | `Date` | The reference date. |
+| `matchOnlyForYearMonthDay?` | `boolean` | Optional flag to indicate if the dates should only match for year, month, and day. Defaults to false. |
+
+#### Returns
+
+`boolean`
+
+- True if d1 is before d2 (or matches only for year, month, and day if specified), otherwise false.
+
+#### Defined in
+
+utils/date-utils.ts:23
+
+___
+
+### isBetween
+
+▸ **isBetween**(`dateToMatch`, `start`, `end`, `matchOnlyForYearMonthDay?`): `boolean`
+
+Checks if a given date falls between a start and end date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `dateToMatch` | `Date` | The date to check. |
+| `start` | `Date` | The start date. |
+| `end` | `Date` | The end date. |
+| `matchOnlyForYearMonthDay?` | `boolean` | (Optional) Specifies whether to only consider the year, month, and day when checking the date. Default is false. |
+
+#### Returns
+
+`boolean`
+
+- True if the date falls between the start and end dates, false otherwise.
+
+#### Defined in
+
+utils/date-utils.ts:48
 
 ___
 
@@ -471,7 +902,7 @@ a boolean value indicating whether the collection is empty or not.
 
 #### Defined in
 
-[utils/collection-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L9)
+[utils/collection-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L9)
 
 ___
 
@@ -495,7 +926,7 @@ The function `isEmpty` returns a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L20)
+[utils/string-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L20)
 
 ___
 
@@ -525,7 +956,7 @@ The function `isEqual` returns a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:46](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/common-utils.ts#L46)
+[utils/common-utils.ts:46](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/common-utils.ts#L46)
 
 ___
 
@@ -555,7 +986,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-[utils/collection-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L19)
+[utils/collection-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L19)
 
 ___
 
@@ -579,7 +1010,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:30](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L30)
+[utils/string-utils.ts:30](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L30)
 
 ___
 
@@ -609,7 +1040,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/number-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/number-utils.ts#L19)
+[utils/number-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/number-utils.ts#L19)
 
 ___
 
@@ -639,7 +1070,33 @@ a boolean value indicating whether the input object is a string or not.
 
 #### Defined in
 
-[utils/string-utils.ts:93](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L93)
+[utils/string-utils.ts:93](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L93)
+
+___
+
+### monthFromDate
+
+▸ **monthFromDate**(`date`, `locales?`, `month?`): `string`
+
+Returns the month from a given date in the specified format.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `date` | `Date` | `undefined` | The date from which to extract the month. |
+| `locales?` | `LocalesArgument` | `'default'` | A string representing a BCP 47 language tag, or an array of such strings. |
+| `month?` | ``"numeric"`` \| ``"2-digit"`` \| ``"long"`` \| ``"short"`` \| ``"narrow"`` | `"long"` | The format in which to return the month. Possible values are: - "numeric": Returns the month as a digit (e.g. 1, 2, 3, ... 12). - "2-digit": Returns the month as a two-digit number with leading zero (e.g. 01, 02, 03, ... 12). - "long": Returns the full name of the month (e.g. January, February, ... December). - "short": Returns the abbreviated name of the month (e.g. Jan, Feb, ... Dec). - "narrow": Returns the narrow name of the month (e.g. J, F, ... D). - undefined or not provided: Returns the default long format. |
+
+#### Returns
+
+`string`
+
+The month from the given date in the specified format.
+
+#### Defined in
+
+utils/date-utils.ts:211
 
 ___
 
@@ -669,7 +1126,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:26](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/common-utils.ts#L26)
+[utils/common-utils.ts:26](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/common-utils.ts#L26)
 
 ___
 
@@ -700,7 +1157,7 @@ an array of arrays of type T, or undefined.
 
 #### Defined in
 
-[utils/collection-utils.ts:133](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L133)
+[utils/collection-utils.ts:133](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L133)
 
 ___
 
@@ -731,7 +1188,7 @@ The function `parzializeArrayByKeys` returns an array of arrays of type `T`, or 
 
 #### Defined in
 
-[utils/collection-utils.ts:150](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L150)
+[utils/collection-utils.ts:150](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L150)
 
 ___
 
@@ -756,7 +1213,7 @@ a number, which is the calculated percentage value.
 
 #### Defined in
 
-[utils/number-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/number-utils.ts#L33)
+[utils/number-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/number-utils.ts#L33)
 
 ___
 
@@ -786,7 +1243,32 @@ a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:15](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/common-utils.ts#L15)
+[utils/common-utils.ts:15](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/common-utils.ts#L15)
+
+___
+
+### removeDays
+
+▸ **removeDays**(`d`, `days?`): `Date`
+
+Removes the specified number of days from a given date.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `d` | `Date` | `undefined` | The date to remove days from. |
+| `days` | `number` | `1` | The number of days to remove. Defaults to 1 if not provided. |
+
+#### Returns
+
+`Date`
+
+- The new date after removing the specified number of days.
+
+#### Defined in
+
+utils/date-utils.ts:101
 
 ___
 
@@ -817,7 +1299,7 @@ The function `rimuoviDuplicatiByKey` returns an array of type `T[]`.
 
 #### Defined in
 
-[utils/collection-utils.ts:103](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L103)
+[utils/collection-utils.ts:103](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L103)
 
 ___
 
@@ -848,7 +1330,7 @@ an array of type T, which is the collection with duplicate elements removed base
 
 #### Defined in
 
-[utils/collection-utils.ts:115](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/collection-utils.ts#L115)
+[utils/collection-utils.ts:115](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/collection-utils.ts#L115)
 
 ___
 
@@ -884,7 +1366,7 @@ example of usage: cleaning object before store into DB(JSON type colum)
 
 #### Defined in
 
-utils/object-utils.ts:9
+[utils/object-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/object-utils.ts#L9)
 
 ___
 
@@ -908,7 +1390,7 @@ a string with all whitespace characters removed.
 
 #### Defined in
 
-[utils/string-utils.ts:102](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L102)
+[utils/string-utils.ts:102](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L102)
 
 ___
 
@@ -934,7 +1416,32 @@ The function `replaceAll` returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:125](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L125)
+[utils/string-utils.ts:125](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L125)
+
+___
+
+### sameDate
+
+▸ **sameDate**(`d1`, `d2`): `boolean`
+
+Checks if two dates are the same (year, month, and day).
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d1` | `Date` | The first date to compare. |
+| `d2` | `Date` | The second date to compare. |
+
+#### Returns
+
+`boolean`
+
+- True if the two dates are the same, false otherwise.
+
+#### Defined in
+
+utils/date-utils.ts:11
 
 ___
 
@@ -990,7 +1497,7 @@ array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN',...], false))
 
 #### Defined in
 
-[utils/sort-utils.ts:32](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/sort-utils.ts#L32)
+[utils/sort-utils.ts:32](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/sort-utils.ts#L32)
 
 ___
 
@@ -1015,7 +1522,7 @@ a number.
 
 #### Defined in
 
-[utils/string-utils.ts:135](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L135)
+[utils/string-utils.ts:135](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L135)
 
 ___
 
@@ -1041,7 +1548,7 @@ The ternaryOperator function returns either s2 or s1 based on the value of the c
 
 #### Defined in
 
-[utils/string-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/string-utils.ts#L114)
+[utils/string-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/string-utils.ts#L114)
 
 ___
 
@@ -1065,7 +1572,57 @@ a boolean value.
 
 #### Defined in
 
-[utils/boolean-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/boolean-utils.ts#L9)
+[utils/boolean-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/boolean-utils.ts#L9)
+
+___
+
+### toLocalDate
+
+▸ **toLocalDate**(`date`): `string`
+
+Converts a Date object to a string representation of the local date.
+If the input date is null or undefined, an empty string is returned.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `date` | `undefined` \| ``null`` \| `Date` | The date object to convert. |
+
+#### Returns
+
+`string`
+
+The string representation of the local date.
+
+#### Defined in
+
+utils/date-utils.ts:77
+
+___
+
+### toLocalDateTime
+
+▸ **toLocalDateTime**(`date`, `nowAsDefault?`): `string`
+
+Converts a given `Date`, `number`, `null`, or `undefined` value to a localized string representation of the date and time in "YYYY-MM-DDTHH:MM" format.
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `date` | `undefined` \| ``null`` \| `number` \| `Date` | `undefined` | The value to be converted. |
+| `nowAsDefault?` | `boolean` | `false` | If `true` and `date` is not provided, the current date and time will be used as the default value. |
+
+#### Returns
+
+`string`
+
+The localized string representation of the date and time. Returns 'N.d.' if `date` is `null` and `nowAsDefault` is `false`.
+
+#### Defined in
+
+utils/date-utils.ts:59
 
 ___
 
@@ -1095,4 +1652,29 @@ a number.
 
 #### Defined in
 
-[utils/number-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/ec15cbc/src/utils/number-utils.ts#L9)
+[utils/number-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/bf48e65/src/utils/number-utils.ts#L9)
+
+___
+
+### typizeBlobFromFileName
+
+▸ **typizeBlobFromFileName**(`blob`, `fileName`): `undefined` \| `Blob`
+
+Converts a Blob to a specific Blob type based on the file name extension.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `blob` | `Blob` | The Blob instance to be typed. |
+| `fileName` | `string` | The name of the file associated with the Blob. |
+
+#### Returns
+
+`undefined` \| `Blob`
+
+- A new Blob instance of the specified type, or undefined if unsupported extension or invalid filename.
+
+#### Defined in
+
+utils/file-utils.ts:35

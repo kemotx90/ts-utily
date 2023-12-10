@@ -1,3 +1,6 @@
+/**
+ * for nested object into array use object.array.0.nested (no ide suggestion as propose)
+ */
 export type NestedKeyOf<ObjectType extends object> =
     {
         [Key in keyof ObjectType & (string | number)]: ObjectType[Key] extends object
