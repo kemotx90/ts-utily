@@ -1,7 +1,5 @@
 import {MimeTypeEnum} from "../model/mime-type-enum";
-import {Blob, File} from "node:buffer";
 import {notPresent} from "./common-utils";
-import {blob} from "node:stream/consumers";
 
 /**
  * Retrieves the MIME type from a file extension.
@@ -69,7 +67,7 @@ export const createBlobFromBase64AndMimeType = (base64: string, MIME_Type: MimeT
  * @param {string} fileName - The name of the file.
  * @returns {File} - The created file object.
  */
-export const createFileFromBase64AndMimeType = (base64: string, MIME_Type: MimeTypeEnum, fileName: string) => {
+export const createFileFromBase64AndMimeType = (base64: string, MIME_Type: MimeTypeEnum, fileName: string): File => {
     const blob: Blob = createBlobFromBase64AndMimeType(base64, MIME_Type);
     return new File([blob], fileName, { type: MIME_Type });
 }

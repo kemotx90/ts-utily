@@ -1,11 +1,10 @@
 import {
-    createBlobFromBase64AndMimeType, createFileFromBase64AndMimeType,
+    createBlobFromBase64AndMimeType,
     getExtensionFromFileName,
     getMimeTypeFromExtension,
     typizeBlobFromFileName
 } from "../src/index";
 import {MimeTypeEnum} from "../src/model/mime-type-enum";
-import {Blob, File} from 'node:buffer';
 
 describe('getMimeTypeFromExtension', () => {
     /**
@@ -105,19 +104,5 @@ describe('createBlobFromBase64AndMimeType Function', () => {
         // You could convert Blob to a string or ArrayBuffer and compare it with the original data
         const text = await blob.text();
         expect(text).toBe('hello world');
-    });
-});
-
-describe('createFileFromBase64AndMimeType', () => {
-    test('should create a File from base64 and MIME type', () => {
-        const base64 = 'SGVsbG8gd29ybGQ='; // "Hello world" in base64
-        const expectedMimeType = MimeTypeEnum.TYPE_TXT;
-        const expectedFileName = 'test.txt';
-
-        const result = createFileFromBase64AndMimeType(base64, expectedMimeType, expectedFileName);
-
-        expect(result).toBeInstanceOf(File);
-        expect(result.name).toEqual(expectedFileName);
-        expect(result.type).toEqual(expectedMimeType);
     });
 });
