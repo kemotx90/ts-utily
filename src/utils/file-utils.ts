@@ -101,3 +101,39 @@ export const fileIs = (filename: string, mimeType: MimeTypeEnum): boolean => {
     if (notPresent(extension)) return false;
     return getMimeTypeFromExtension(extension!) === mimeType;
 }
+
+/**
+ * Converts an ArrayBuffer to a Base64 string.
+ *
+ * @param {Uint8Array} buffer - The ArrayBuffer to convert.
+ * @returns {string} - The Base64 string representation of the ArrayBuffer.
+ */
+export const arrayBufferToBase64 = (buffer: Uint8Array): string => {
+    let binary = '';
+    const bytes = new Uint8Array(buffer);
+    const len = bytes.byteLength;
+    for (let i = 0; i < len; i++) {
+        binary += String.fromCharCode(bytes[i]);
+    }
+    return btoa(binary);
+}
+
+/**
+ * Converts a string into an ArrayBuffer.
+ *
+ * @param {string} string - The string to be converted.
+ * @returns {ArrayBuffer} - The converted ArrayBuffer.
+ */
+export const createArrayBufferFromString = (string: string): ArrayBuffer => {
+    return new TextEncoder().encode(string).buffer;
+}
+
+/**
+ * Converts an ArrayBuffer to a Uint8Array.
+ *
+ * @param {ArrayBuffer} arrayBuffer - The ArrayBuffer to be converted.
+ * @returns {Uint8Array} - The converted Uint8Array.
+ */
+export const convertArrayBufferToUint8Array = (arrayBuffer: ArrayBuffer): Uint8Array => {
+    return new Uint8Array(arrayBuffer);
+}

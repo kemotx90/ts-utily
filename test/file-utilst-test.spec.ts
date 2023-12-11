@@ -1,4 +1,5 @@
 import {
+    arrayBufferToBase64, convertArrayBufferToUint8Array, createArrayBufferFromString,
     createBlobFromBase64AndMimeType, fileIs,
     getExtensionFromFileName, getExtensionFromMimeType,
     getMimeTypeFromExtension,
@@ -167,5 +168,53 @@ describe('fileIs', () => {
 
     it('should return false when file name has no extension', () => {
         expect(fileIs('file', MimeTypeEnum.TYPE_PDF)).toBe(false);
+    });
+});
+
+describe('arrayBufferToBase64', () => {
+    /**
+     * This test case tests the scenario where the input buffer has some data. The output is
+     * checked against the expected base64 string.
+     */
+    it('should return correct base64 when buffer is not empty', () => {
+        const mockBuffer = new Uint8Array([10, 20, 30]);
+        const base64String = arrayBufferToBase64(mockBuffer);
+        expect(base64String).toBe('ChQe');
+    });
+
+    /**
+     * This test case tests the scenario where the input buffer is empty. The base64 string of an empty buffer
+     * should also be empty.
+     */
+    it('should return empty string when buffer is empty', () => {
+        const mockBuffer = new Uint8Array([]);
+        const base64String = arrayBufferToBase64(mockBuffer);
+        expect(base64String).toBe('');
+    });
+});
+
+describe('createArrayBufferFromString', () => {
+
+    it('converts a string to an ArrayBuffer', () => {
+        const input = 'test';
+        const expectedOutput = new TextEncoder().encode(input).buffer;
+
+        expect(createArrayBufferFromString(input)).toStrictEqual(expectedOutput);
+    });
+});
+
+describe('convertArrayBufferToUint8Array function', () => {
+    it('converts an ArrayBuffer to a Uint8Array', () => {
+        const testArrayBuffer = new ArrayBuffer(2);
+        const expectedResult = new Uint8Array(testArrayBuffer);
+        const result = convertArrayBufferToUint8Array(testArrayBuffer);
+        expect(result).toEqual(expectedResult);
+    });
+
+    it('returns an empty Uint8Array for an empty ArrayBuffer', () => {
+        const testArrayBuffer = new ArrayBuffer(0);
+        const expectedResult = new Uint8Array(testArrayBuffer);
+        const result = convertArrayBufferToUint8Array(testArrayBuffer);
+        expect(result).toEqual(expectedResult);
     });
 });
