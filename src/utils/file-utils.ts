@@ -38,14 +38,21 @@ export const typizeBlobFromFileName = (blob: Blob, fileName: string): Blob | und
     return new Blob([blob], {type: mimeType});
 }
 
+
 /**
- * Creates a Buffer from a given base64 string.
+ * Converts a base64 string to a Uint8Array.
  *
- * @param {string} base64 - The base64 string to convert to a Buffer.
- * @returns {Buffer} - The Buffer representation of the base64 string.
+ * @param base64 - The base64 string to convert.
+ * @returns The Uint8Array representing the base64 string.
  */
-export const createBufferFromBase64 = (base64: string): Buffer => {
-    return Buffer.from(base64, 'base64');
+export const createUint8ArrayFromBase64 = (base64: string): Uint8Array => {
+    const binaryString = atob(base64);
+    const len = binaryString.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+    }
+    return bytes;
 }
 
 /**
@@ -56,7 +63,7 @@ export const createBufferFromBase64 = (base64: string): Buffer => {
  * @returns {Blob} - The Blob object.
  */
 export const createBlobFromBase64AndMimeType = (base64: string, MIME_Type: MimeTypeEnum): Blob => {
-    return new Blob([createBufferFromBase64(base64)], {type: MIME_Type});
+    return new Blob([createUint8ArrayFromBase64(base64)], {type: MIME_Type});
 }
 
 /**
