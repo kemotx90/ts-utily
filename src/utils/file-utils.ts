@@ -76,5 +76,28 @@ export const createBlobFromBase64AndMimeType = (base64: string, MIME_Type: MimeT
  */
 export const createFileFromBase64AndMimeType = (base64: string, MIME_Type: MimeTypeEnum, fileName: string): File => {
     const blob: Blob = createBlobFromBase64AndMimeType(base64, MIME_Type);
-    return new File([blob], fileName, { type: MIME_Type });
+    return new File([blob], fileName, {type: MIME_Type});
+}
+
+/**
+ * Retrieves file extension from given MIME type
+ *
+ * @param {MimeTypeEnum} mimeType - The MIME type of the file
+ * @returns {string} - The file extension
+ */
+export const getExtensionFromMimeType = (mimeType: MimeTypeEnum): string => {
+    return '.' + Object.keys(MimeTypeEnum).find(key => (MimeTypeEnum as any)[key] === mimeType)!.split('_')[1].toLowerCase();
+}
+
+/**
+ * Checks if a file matches the specified filename and mimeType.
+ *
+ * @param {string} filename - The name of the file.
+ * @param {MimeTypeEnum} mimeType - The MIME type to match.
+ * @returns {boolean} Returns `true` if the filename matches the MIME type, otherwise `false`.
+ */
+export const fileIs = (filename: string, mimeType: MimeTypeEnum): boolean => {
+    const extension: string | undefined = getExtensionFromFileName(filename);
+    if (notPresent(extension)) return false;
+    return getMimeTypeFromExtension(extension!) === mimeType;
 }

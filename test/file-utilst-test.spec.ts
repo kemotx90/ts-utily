@@ -1,6 +1,6 @@
 import {
-    createBlobFromBase64AndMimeType,
-    getExtensionFromFileName,
+    createBlobFromBase64AndMimeType, fileIs,
+    getExtensionFromFileName, getExtensionFromMimeType,
     getMimeTypeFromExtension,
     typizeBlobFromFileName
 } from "../src/index";
@@ -104,5 +104,68 @@ describe('createBlobFromBase64AndMimeType Function', () => {
         // You could convert Blob to a string or ArrayBuffer and compare it with the original data
         const text = await blob.text();
         expect(text).toBe('hello world');
+    });
+});
+
+describe('getExtensionFromMimeType function', () => {
+    test('should return file extension for given MIME type', () => {
+        const mimeType = MimeTypeEnum.TYPE_DOC;
+        const result = getExtensionFromMimeType(mimeType);
+        expect(result).toEqual('.doc');
+    });
+
+    test('should return correct file extension for multiple MIME types', () => {
+        const mappings: Partial<{ [key in keyof typeof MimeTypeEnum]: string }> = {
+            TYPE_DOC: '.doc',
+            TYPE_DOCX: '.docx',
+            TYPE_JPEG: '.jpeg',
+            TYPE_MP4: '.mp4',
+            TYPE_ODP: '.odp',
+            TYPE_ODS: '.ods',
+            TYPE_ODT: '.odt',
+            TYPE_PNG: '.png',
+            TYPE_PDF: '.pdf',
+            TYPE_PPT: '.ppt',
+            TYPE_PPTX: '.pptx',
+            TYPE_RAR: '.rar',
+            TYPE_TXT: '.txt',
+            TYPE_XLS: '.xls',
+            TYPE_XLSX: '.xlsx',
+            TYPE_ZIP: '.zip',
+            TYPE_DWG: '.dwg',
+            TYPE_7Z: '.7z',
+            TYPE_AVI: '.avi',
+            TYPE_ABW: '.abw',
+            TYPE_BMP: '.bmp',
+            TYPE_BZ: '.bz',
+            TYPE_BZ2: '.bz2',
+            TYPE_CSV: '.csv',
+            TYPE_GZ: '.gz',
+            TYPE_MPEG: '.mpeg',
+            TYPE_OGV: '.ogv',
+            TYPE_SVG: '.svg',
+            TYPE_TAR: '.tar',
+            TYPE_WEBM: '.webm',
+            TYPE_WEBP: '.webp'
+        };
+
+        for (const [mimeType, expectedExtension] of Object.entries(mappings)) {
+            const result = getExtensionFromMimeType(MimeTypeEnum[mimeType as keyof typeof MimeTypeEnum]);
+            expect(result).toEqual(expectedExtension);
+        }
+    });
+});
+
+describe('fileIs', () => {
+    it('should return true when file extension is correct', () => {
+        expect(fileIs('file.pdf', MimeTypeEnum.TYPE_PDF)).toBe(true);
+    });
+
+    it('should return false when file extension is incorrect', () => {
+        expect(fileIs('file.pdf', MimeTypeEnum.TYPE_DOC)).toBe(false);
+    });
+
+    it('should return false when file name has no extension', () => {
+        expect(fileIs('file', MimeTypeEnum.TYPE_PDF)).toBe(false);
     });
 });
