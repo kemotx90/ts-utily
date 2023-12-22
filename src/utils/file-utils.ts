@@ -67,6 +67,17 @@ export const createBlobFromBase64AndMimeType = (base64: string, MIME_Type: MimeT
 }
 
 /**
+ * Creates a Blob object from an array of blob parts and the MIME type.
+ *
+ * @param {Array<BlobPart>} blobParts - The array of blob parts to be combined into a Blob object.
+ * @param {string} MIME_Type - The MIME type for the Blob object.
+ * @return {Blob} - The Blob object created from the provided blob parts and MIME type.
+ */
+export const createBlobFromSourceAndMimeType = (blobParts: BlobPart[], MIME_Type: MimeTypeEnum): Blob => {
+    return new Blob(blobParts, {type: MIME_Type});
+}
+
+/**
  * Creates a file from a base64 encoded string and MIME type.
  *
  * @param {string} base64 - The base64 encoded string representing the file.

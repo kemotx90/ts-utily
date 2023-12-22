@@ -1,6 +1,6 @@
 import {
     arrayBufferToBase64, convertArrayBufferToUint8Array, createArrayBufferFromString,
-    createBlobFromBase64AndMimeType, fileIs,
+    createBlobFromBase64AndMimeType, createBlobFromSourceAndMimeType, fileIs,
     getExtensionFromFileName, getExtensionFromMimeType,
     getMimeTypeFromExtension,
     typizeBlobFromFileName
@@ -105,6 +105,18 @@ describe('createBlobFromBase64AndMimeType Function', () => {
         // You could convert Blob to a string or ArrayBuffer and compare it with the original data
         const text = await blob.text();
         expect(text).toBe('hello world');
+    });
+});
+
+describe('createBlobFromSourceAndMimeType', () => {
+    it('creates a Blob object from provided blob parts and a MIME type', () => {
+        const mockBlobParts: BlobPart[] = ['blobTestPart1', 'blobTestPart2'];  // Mock values for BlobPart
+        const mockMIMEType: MimeTypeEnum = MimeTypeEnum.TYPE_TXT;  // Mock MIMEType
+
+        const result = createBlobFromSourceAndMimeType(mockBlobParts, mockMIMEType);
+
+        expect(result).toBeInstanceOf(Blob);
+        expect(result.type).toBe(MimeTypeEnum.TYPE_TXT);
     });
 });
 

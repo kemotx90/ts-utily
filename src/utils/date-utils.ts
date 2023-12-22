@@ -46,7 +46,7 @@ export const isAfter = (d1: Date, d2: Date, matchOnlyForYearMonthDay?: boolean):
  * @returns {boolean} - True if the date falls between the start and end dates, false otherwise.
  */
 export const isBetween = (dateToMatch: Date, start: Date, end: Date, matchOnlyForYearMonthDay?: boolean): boolean => {
-    return isBefore(start, dateToMatch, matchOnlyForYearMonthDay) && isBefore(dateToMatch, end);
+    return isBefore(start, dateToMatch, matchOnlyForYearMonthDay) && isBefore(dateToMatch, end, matchOnlyForYearMonthDay);
 }
 
 /**
@@ -227,4 +227,25 @@ export const dateWith00Mins = (date?: Date | number): Date => {
     dateWith00Mins.setSeconds(0);
     dateWith00Mins.setMilliseconds(0);
     return dateWith00Mins;
+}
+
+/**
+ * Sets the time portion of a given date.
+ *
+ * @param {Date | number | null | undefined} date - The date object or timestamp to modify.
+ * @param {string} time - The time string to set in the format 'HH:MM'.
+ * @returns {Date | null} - The modified date object or null if the input date is not present.
+ * @throws {error} - Throws an error if the given date or time is not valid.
+ */
+export const setTime = (date: Date | number | null | undefined, time: string): Date | undefined => {
+    try {
+        if (notPresent(date)) return undefined;
+        const newDate: Date = new Date(date!);
+        const [hours, minutes] = time.split(':');
+        newDate.setHours(Number(hours));
+        newDate.setMinutes(Number(minutes));
+        return newDate;
+    } catch (e) {
+        console.error('not valid date or time', e);
+    }
 }

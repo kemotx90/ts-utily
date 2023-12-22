@@ -4,7 +4,7 @@ import {
     getHoursAndMinutesFromDateAsString, getNextDayOfWeekFromDate,
     getTomorrow, hoursBetween,
     instantToDate, isAfter, isBefore, isBetween,
-    monthFromDate, removeDays, sameDate, toLocalDate
+    monthFromDate, removeDays, sameDate, setTime, toLocalDate
 } from "../src/index";
 import {DayOfWeek} from "../src/model/day-of-week-enum";
 
@@ -416,5 +416,31 @@ describe('dateWith00Mins function', () => {
         expect(result.getMonth()).toBe(5);
         expect(result.getDate()).toBe(28);
         expect(result.getHours()).toBe(12);
+    });
+});
+
+// Main test suite
+describe('setTime function from date-utils file', () => {
+
+    it('should set the time properly', () => {
+        const date = new Date(2023, 3, 3);
+        const time = '07:30';
+        const newDate = setTime(date, time);
+        expect(newDate?.getHours()).toBe(7);
+        expect(newDate?.getMinutes()).toBe(30);
+    });
+
+    it('should return undefined when date is not present', () => {
+        const time = '07:30';
+        const newDate = setTime(undefined, time);
+        expect(newDate).toBeUndefined();
+    });
+
+    it('should properly handle timestamps', () => {
+        const timestamp = Date.now();
+        const time = '12:00';
+        const newDate = setTime(timestamp, time);
+        expect(newDate?.getHours()).toBe(12);
+        expect(newDate?.getMinutes()).toBe(0);
     });
 });

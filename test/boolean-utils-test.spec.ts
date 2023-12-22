@@ -1,4 +1,4 @@
-import {toBoolean} from "../src/index";
+import {toBoolean} from "../dist/index";
 
 
 test('boolean string true, TRUE, Y, y, 1', () => {

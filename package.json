@@ -1,6 +1,6 @@
 {
   "name": "ts-utily",
-  "version": "1.1.22",
+  "version": "1.1.24",
   "description": "Typescript utils library",
   "homepage": "https://github.com/kemotx90/ts-utily#readme",
   "main": "dist/ts-utily.js",
@@ -30,6 +30,10 @@
     "common",
     "collection",
     "conversion",
+    "sort",
+    "object",
+    "date",
+    "file",
     "angular utils",
     "react utils"
   ],
@@ -38,14 +42,14 @@
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.10.5",
     "jest": "^29.7.0",
     "rimraf": "^5.0.5",
-    "rollup": "^4.8.0",
+    "rollup": "^4.9.1",
     "rollup-plugin-typescript2": "^0.36.0",
     "ts-jest": "^29.1.1",
     "typedoc": "^0.25.4",
     "typedoc-plugin-markdown": "^3.17.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   }
 }

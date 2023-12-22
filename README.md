@@ -1,4 +1,4 @@
-[ts-utily](README.md) / Exports
+**[ts-utily](README.md) / Exports
 
 # ts-utily
 
@@ -17,6 +17,7 @@
 - [convertMapToIndexSignatures](#convertmaptoindexsignatures)
 - [createArrayBufferFromString](#createarraybufferfromstring)
 - [createBlobFromBase64AndMimeType](#createblobfrombase64andmimetype)
+- [createBlobFromSourceAndMimeType](#createblobfromsourceandmimetype)
 - [createFileFromBase64AndMimeType](#createfilefrombase64andmimetype)
 - [createUint8ArrayFromBase64](#createuint8arrayfrombase64)
 - [dateWith00Mins](#datewith00mins)
@@ -61,6 +62,7 @@
 - [removeWhiteSpace](#removewhitespace)
 - [replaceAll](#replaceall)
 - [sameDate](#samedate)
+- [setTime](#settime)
 - [sortByObjectValues](#sortbyobjectvalues)
 - [sortNumericString](#sortnumericstring)
 - [ternaryOperator](#ternaryoperator)
@@ -93,7 +95,7 @@ Adds specified number of days to a given Date object.
 
 #### Defined in
 
-[utils/date-utils.ts:88](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L88)
+[utils/date-utils.ts:88](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L88)
 
 ___
 
@@ -117,7 +119,7 @@ Converts an ArrayBuffer to a Base64 string.
 
 #### Defined in
 
-[utils/file-utils.ts:111](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L111)
+[utils/file-utils.ts:122](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L122)
 
 ___
 
@@ -148,7 +150,7 @@ the element at the specified index in the collection. If the collection is empty
 
 #### Defined in
 
-[utils/collection-utils.ts:29](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L29)
+[utils/collection-utils.ts:29](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L29)
 
 ___
 
@@ -172,7 +174,7 @@ The `capitalize` function returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:55](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L55)
+[utils/string-utils.ts:55](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L55)
 
 ___
 
@@ -196,7 +198,7 @@ The function `capitalizeFully` returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:68](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L68)
+[utils/string-utils.ts:68](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L68)
 
 ___
 
@@ -221,7 +223,7 @@ a number. If `s1` is lexicographically less than `s2` (ignoring case), it return
 
 #### Defined in
 
-[utils/string-utils.ts:83](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L83)
+[utils/string-utils.ts:83](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L83)
 
 ___
 
@@ -245,7 +247,7 @@ Converts an ArrayBuffer to a Uint8Array.
 
 #### Defined in
 
-[utils/file-utils.ts:137](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L137)
+[utils/file-utils.ts:148](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L148)
 
 ___
 
@@ -275,7 +277,7 @@ a `Map<string, V>` or `undefined`.
 
 #### Defined in
 
-[utils/conversion-utils.ts:8](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/conversion-utils.ts#L8)
+[utils/conversion-utils.ts:8](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/conversion-utils.ts#L8)
 
 ___
 
@@ -305,7 +307,7 @@ an object with index signatures, where the keys are strings and the values are o
 
 #### Defined in
 
-[utils/conversion-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/conversion-utils.ts#L20)
+[utils/conversion-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/conversion-utils.ts#L20)
 
 ___
 
@@ -329,7 +331,7 @@ Converts a string into an ArrayBuffer.
 
 #### Defined in
 
-[utils/file-utils.ts:127](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L127)
+[utils/file-utils.ts:138](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L138)
 
 ___
 
@@ -354,7 +356,32 @@ Create a Blob object from the given base64 string and MIME type.
 
 #### Defined in
 
-[utils/file-utils.ts:65](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L65)
+[utils/file-utils.ts:65](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L65)
+
+___
+
+### createBlobFromSourceAndMimeType
+
+▸ **createBlobFromSourceAndMimeType**(`blobParts`, `MIME_Type`): `Blob`
+
+Creates a Blob object from an array of blob parts and the MIME type.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `blobParts` | `BlobPart`[] | The array of blob parts to be combined into a Blob object. |
+| `MIME_Type` | `MimeTypeEnum` | The MIME type for the Blob object. |
+
+#### Returns
+
+`Blob`
+
+- The Blob object created from the provided blob parts and MIME type.
+
+#### Defined in
+
+[utils/file-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L76)
 
 ___
 
@@ -380,7 +407,7 @@ Creates a file from a base64 encoded string and MIME type.
 
 #### Defined in
 
-[utils/file-utils.ts:77](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L77)
+[utils/file-utils.ts:88](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L88)
 
 ___
 
@@ -404,7 +431,7 @@ The Uint8Array representing the base64 string.
 
 #### Defined in
 
-[utils/file-utils.ts:48](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L48)
+[utils/file-utils.ts:48](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L48)
 
 ___
 
@@ -429,7 +456,7 @@ The modified date.
 
 #### Defined in
 
-[utils/date-utils.ts:222](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L222)
+[utils/date-utils.ts:222](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L222)
 
 ___
 
@@ -454,7 +481,7 @@ The number of days between the two dates.
 
 #### Defined in
 
-[utils/date-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L114)
+[utils/date-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L114)
 
 ___
 
@@ -485,7 +512,7 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:62](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L62)
+[utils/collection-utils.ts:62](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L62)
 
 ___
 
@@ -516,7 +543,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/collection-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L76)
+[utils/collection-utils.ts:76](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L76)
 
 ___
 
@@ -541,7 +568,7 @@ Returns `true` if the filename matches the MIME type, otherwise `false`.
 
 #### Defined in
 
-[utils/file-utils.ts:99](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L99)
+[utils/file-utils.ts:110](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L110)
 
 ___
 
@@ -573,7 +600,7 @@ a value of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:91](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L91)
+[utils/collection-utils.ts:91](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L91)
 
 ___
 
@@ -603,7 +630,7 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L40)
+[utils/collection-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L40)
 
 ___
 
@@ -627,7 +654,7 @@ Retrieves the file extension from a file name.
 
 #### Defined in
 
-[utils/file-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L20)
+[utils/file-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L20)
 
 ___
 
@@ -651,7 +678,7 @@ Retrieves file extension from given MIME type
 
 #### Defined in
 
-[utils/file-utils.ts:88](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L88)
+[utils/file-utils.ts:99](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L99)
 
 ___
 
@@ -678,7 +705,7 @@ The string representation of the hours and minutes, or null if the input is null
 
 #### Defined in
 
-[utils/date-utils.ts:171](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L171)
+[utils/date-utils.ts:171](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L171)
 
 ___
 
@@ -702,7 +729,7 @@ Retrieves the MIME type from a file extension.
 
 #### Defined in
 
-[utils/file-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L10)
+[utils/file-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L10)
 
 ___
 
@@ -727,7 +754,7 @@ Gets the next occurrence of a specified day of the week from a given date.
 
 #### Defined in
 
-[utils/date-utils.ts:140](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L140)
+[utils/date-utils.ts:140](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L140)
 
 ___
 
@@ -758,7 +785,7 @@ The function `getOrDefault` returns the value of `data` if it is not null or und
 
 #### Defined in
 
-[utils/common-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/common-utils.ts#L36)
+[utils/common-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/common-utils.ts#L36)
 
 ___
 
@@ -789,7 +816,7 @@ an array of type T.
 
 #### Defined in
 
-[utils/collection-utils.ts:51](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L51)
+[utils/collection-utils.ts:51](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L51)
 
 ___
 
@@ -814,7 +841,7 @@ The function `getOrDefault` returns a string value.
 
 #### Defined in
 
-[utils/string-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L40)
+[utils/string-utils.ts:40](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L40)
 
 ___
 
@@ -838,7 +865,7 @@ Returns tomorrow's date.
 
 #### Defined in
 
-[utils/date-utils.ts:156](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L156)
+[utils/date-utils.ts:156](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L156)
 
 ___
 
@@ -864,7 +891,7 @@ The number of hours between the two dates.
 
 #### Defined in
 
-[utils/date-utils.ts:127](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L127)
+[utils/date-utils.ts:127](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L127)
 
 ___
 
@@ -889,7 +916,7 @@ The function `includes` returns a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L10)
+[utils/string-utils.ts:10](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L10)
 
 ___
 
@@ -919,7 +946,7 @@ use for convert Instant(like as java object) to javascript date
 
 #### Defined in
 
-[utils/date-utils.ts:184](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L184)
+[utils/date-utils.ts:184](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L184)
 
 ___
 
@@ -945,7 +972,7 @@ Checks if a given date is after another date.
 
 #### Defined in
 
-[utils/date-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L36)
+[utils/date-utils.ts:36](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L36)
 
 ___
 
@@ -971,7 +998,7 @@ Determines if the given date is before the reference date.
 
 #### Defined in
 
-[utils/date-utils.ts:23](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L23)
+[utils/date-utils.ts:23](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L23)
 
 ___
 
@@ -998,7 +1025,7 @@ Checks if a given date falls between a start and end date.
 
 #### Defined in
 
-[utils/date-utils.ts:48](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L48)
+[utils/date-utils.ts:48](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L48)
 
 ___
 
@@ -1028,7 +1055,7 @@ a boolean value indicating whether the collection is empty or not.
 
 #### Defined in
 
-[utils/collection-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L9)
+[utils/collection-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L9)
 
 ___
 
@@ -1052,7 +1079,7 @@ The function `isEmpty` returns a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L20)
+[utils/string-utils.ts:20](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L20)
 
 ___
 
@@ -1082,7 +1109,7 @@ The function `isEqual` returns a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:46](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/common-utils.ts#L46)
+[utils/common-utils.ts:46](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/common-utils.ts#L46)
 
 ___
 
@@ -1112,7 +1139,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-[utils/collection-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L19)
+[utils/collection-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L19)
 
 ___
 
@@ -1136,7 +1163,7 @@ The function isNotEmpty is returning a boolean value.
 
 #### Defined in
 
-[utils/string-utils.ts:30](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L30)
+[utils/string-utils.ts:30](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L30)
 
 ___
 
@@ -1166,7 +1193,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/number-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/number-utils.ts#L19)
+[utils/number-utils.ts:19](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/number-utils.ts#L19)
 
 ___
 
@@ -1196,7 +1223,7 @@ a boolean value indicating whether the input object is a string or not.
 
 #### Defined in
 
-[utils/string-utils.ts:93](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L93)
+[utils/string-utils.ts:93](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L93)
 
 ___
 
@@ -1222,7 +1249,7 @@ The month from the given date in the specified format.
 
 #### Defined in
 
-[utils/date-utils.ts:211](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L211)
+[utils/date-utils.ts:211](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L211)
 
 ___
 
@@ -1252,7 +1279,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:26](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/common-utils.ts#L26)
+[utils/common-utils.ts:26](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/common-utils.ts#L26)
 
 ___
 
@@ -1283,7 +1310,7 @@ an array of arrays of type T, or undefined.
 
 #### Defined in
 
-[utils/collection-utils.ts:133](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L133)
+[utils/collection-utils.ts:133](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L133)
 
 ___
 
@@ -1314,7 +1341,7 @@ The function `parzializeArrayByKeys` returns an array of arrays of type `T`, or 
 
 #### Defined in
 
-[utils/collection-utils.ts:150](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L150)
+[utils/collection-utils.ts:150](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L150)
 
 ___
 
@@ -1339,7 +1366,7 @@ a number, which is the calculated percentage value.
 
 #### Defined in
 
-[utils/number-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/number-utils.ts#L33)
+[utils/number-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/number-utils.ts#L33)
 
 ___
 
@@ -1369,7 +1396,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/common-utils.ts:15](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/common-utils.ts#L15)
+[utils/common-utils.ts:15](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/common-utils.ts#L15)
 
 ___
 
@@ -1394,7 +1421,7 @@ Removes the specified number of days from a given date.
 
 #### Defined in
 
-[utils/date-utils.ts:101](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L101)
+[utils/date-utils.ts:101](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L101)
 
 ___
 
@@ -1425,7 +1452,7 @@ The function `rimuoviDuplicatiByKey` returns an array of type `T[]`.
 
 #### Defined in
 
-[utils/collection-utils.ts:103](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L103)
+[utils/collection-utils.ts:103](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L103)
 
 ___
 
@@ -1456,7 +1483,7 @@ an array of type T, which is the collection with duplicate elements removed base
 
 #### Defined in
 
-[utils/collection-utils.ts:115](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/collection-utils.ts#L115)
+[utils/collection-utils.ts:115](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/collection-utils.ts#L115)
 
 ___
 
@@ -1492,7 +1519,7 @@ example of usage: cleaning object before store into DB(JSON type colum)
 
 #### Defined in
 
-[utils/object-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/object-utils.ts#L9)
+[utils/object-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/object-utils.ts#L9)
 
 ___
 
@@ -1516,7 +1543,7 @@ a string with all whitespace characters removed.
 
 #### Defined in
 
-[utils/string-utils.ts:102](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L102)
+[utils/string-utils.ts:102](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L102)
 
 ___
 
@@ -1542,7 +1569,7 @@ The function `replaceAll` returns a string.
 
 #### Defined in
 
-[utils/string-utils.ts:125](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L125)
+[utils/string-utils.ts:125](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L125)
 
 ___
 
@@ -1567,7 +1594,36 @@ Checks if two dates are the same (year, month, and day).
 
 #### Defined in
 
-[utils/date-utils.ts:11](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L11)
+[utils/date-utils.ts:11](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L11)
+
+___
+
+### setTime
+
+▸ **setTime**(`date`, `time`): `undefined` \| `Date`
+
+Sets the time portion of a given date.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `date` | `undefined` \| ``null`` \| `number` \| `Date` | The date object or timestamp to modify. |
+| `time` | `string` | The time string to set in the format 'HH:MM'. |
+
+#### Returns
+
+`undefined` \| `Date`
+
+- The modified date object or null if the input date is not present.
+
+**`Throws`**
+
+- Throws an error if the given date or time is not valid.
+
+#### Defined in
+
+[utils/date-utils.ts:240](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L240)
 
 ___
 
@@ -1623,7 +1679,7 @@ array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN',...], false))
 
 #### Defined in
 
-[utils/sort-utils.ts:32](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/sort-utils.ts#L32)
+[utils/sort-utils.ts:32](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/sort-utils.ts#L32)
 
 ___
 
@@ -1648,7 +1704,7 @@ a number.
 
 #### Defined in
 
-[utils/string-utils.ts:135](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L135)
+[utils/string-utils.ts:135](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L135)
 
 ___
 
@@ -1674,7 +1730,7 @@ The ternaryOperator function returns either s2 or s1 based on the value of the c
 
 #### Defined in
 
-[utils/string-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/string-utils.ts#L114)
+[utils/string-utils.ts:114](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/string-utils.ts#L114)
 
 ___
 
@@ -1698,7 +1754,7 @@ a boolean value.
 
 #### Defined in
 
-[utils/boolean-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/boolean-utils.ts#L9)
+[utils/boolean-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/boolean-utils.ts#L9)
 
 ___
 
@@ -1723,7 +1779,7 @@ The string representation of the local date.
 
 #### Defined in
 
-[utils/date-utils.ts:77](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L77)
+[utils/date-utils.ts:77](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L77)
 
 ___
 
@@ -1748,7 +1804,7 @@ The localized string representation of the date and time. Returns 'N.d.' if `dat
 
 #### Defined in
 
-[utils/date-utils.ts:59](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/date-utils.ts#L59)
+[utils/date-utils.ts:59](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/date-utils.ts#L59)
 
 ___
 
@@ -1776,9 +1832,9 @@ The `toNumber` function converts a value to a number, returning 0 if the value i
 
 a number.
 
-#### Defined in
+#### Defined in**
 
-[utils/number-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/number-utils.ts#L9)
+[utils/number-utils.ts:9](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/number-utils.ts#L9)
 
 ___
 
@@ -1803,4 +1859,4 @@ Converts a Blob to a specific Blob type based on the file name extension.
 
 #### Defined in
 
-[utils/file-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/62ca3ae/src/utils/file-utils.ts#L33)
+[utils/file-utils.ts:33](https://github.com/kemotx90/ts-utily/blob/b7a3a1c/src/utils/file-utils.ts#L33)
