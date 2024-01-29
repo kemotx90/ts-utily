@@ -1,3 +1,5 @@
+ts-utily / [Exports](modules.md)
+
 **[ts-utily](README.md) / Exports
 
 # ts-utily
@@ -267,7 +269,7 @@ The function converts an object with index signatures to a Map.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `indexSignatures` | `undefined` \| \{ `[p: string]`: `V`;  } | An object that contains index signatures, where the keys are strings and the values can be of any type. |
+| `indexSignatures` | `undefined` \| { `[p: string]`: `V`;  } | An object that contains index signatures, where the keys are strings and the values can be of any type. |
 
 #### Returns
 
@@ -283,7 +285,7 @@ ___
 
 ### convertMapToIndexSignatures
 
-▸ **convertMapToIndexSignatures**\<`V`\>(`map`): `undefined` \| \{ `[p: string]`: `V`;  }
+▸ **convertMapToIndexSignatures**\<`V`\>(`map`): `undefined` \| { `[p: string]`: `V`;  }
 
 The function converts a Map object to an object with index signatures in TypeScript.
 
@@ -301,7 +303,7 @@ The function converts a Map object to an object with index signatures in TypeScr
 
 #### Returns
 
-`undefined` \| \{ `[p: string]`: `V`;  }
+`undefined` \| { `[p: string]`: `V`;  }
 
 an object with index signatures, where the keys are strings and the values are of type V. If the input map is undefined, the function returns undefined.
 

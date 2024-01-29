@@ -141,3 +141,19 @@ export const sortNumericString = (a: string, b: string): number => {
  *  is creating a new instance of the `Intl.Collator` object. for sort numerif string
  */
 const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+
+/**
+ * Replaces placeholders in a string with corresponding values from an array.
+ *
+ * @param {string | undefined} string - The string containing placeholders.
+ * @param {any[]} placeholders - An array of objects containing key-value pairs, where the key represents a placeholder and the value is the replacement value.
+ * @returns {string | undefined} - The resulting string with replaced placeholders, or undefined if the input string is undefined.
+ * @example populateTemplate('Replace my text {myReplacePlaceholder}', [{name: 'Valery', age: 20, myReplacePlaceholder: 'test this'}, {name: 'Marcus', age: 21}]) => Replace my text test this
+ */
+export const populateTemplate = (string: string | undefined, placeholders: any[]): string | undefined => {
+    const placeholderRegex: RegExp = /\{(\w+?)}/g;
+    return string?.replace(placeholderRegex, (_, name) => {
+        const element: any = placeholders?.find(el => el[name]);
+        return element ? element[name] : `{${name}}`;
+    });
+}

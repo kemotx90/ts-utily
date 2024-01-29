@@ -6,7 +6,7 @@ import {
     includes,
     isEmptyString,
     isNotEmptyString,
-    isString,
+    isString, populateTemplate,
     removeWhiteSpace,
     replaceAll,
     sortNumericString,
@@ -133,4 +133,37 @@ test('replaceAll', () => {
 test('sortNumericString', () => {
     expect(sortNumericString('abc11', 'abc12')).toBe(-1);
     expect(sortNumericString('abc12', 'abc11')).toBe(1);
+});
+
+describe('populateTemplate function', () => {
+    it('replaces placeholders in a string with the corresponding values from the placeholders array', () => {
+        const string = 'Hello, my name is {name}, I am {age} years old';
+        const placeholders = [
+            { name: 'John', age: 25 },
+            { location: 'New York' },
+        ];
+
+        const expected = 'Hello, my name is John, I am 25 years old';
+        expect(populateTemplate(string, placeholders)).toEqual(expected);
+    });
+
+    it('returns undefined if the string is undefined', () => {
+        const placeholders = [
+            { name: 'John', age: 25 },
+            { location: 'New York' },
+        ];
+
+        expect(populateTemplate(undefined, placeholders)).toEqual(undefined);
+    });
+
+    it('leaves placeholders unreplaced if they do not exist in the placeholders array', () => {
+        const string = 'Hello, my name is {name}, I am from {location}';
+        const placeholders = [
+            { name: 'John', age: 25 },
+            { job: 'Programmer' },
+        ];
+
+        const expected = 'Hello, my name is John, I am from {location}';
+        expect(populateTemplate(string, placeholders)).toEqual(expected);
+    });
 });
