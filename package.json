@@ -1,6 +1,6 @@
 {
   "name": "ts-utily",
-  "version": "1.1.26",
+  "version": "1.1.27",
   "description": "Typescript utils library",
   "homepage": "https://github.com/kemotx90/ts-utily#readme",
   "main": "dist/ts-utily.js",
@@ -35,20 +35,21 @@
     "date",
     "file",
     "angular utils",
-    "react utils"
+    "react utils",
+    "typescript utils"
   ],
   "author": "Piero Solinas & Daniele Carlini",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.5",
+    "@types/node": "^20.11.13",
     "jest": "^29.7.0",
     "rimraf": "^5.0.5",
-    "rollup": "^4.8.0",
+    "rollup": "^4.9.6",
     "rollup-plugin-typescript2": "^0.36.0",
-    "ts-jest": "^29.1.1",
-    "typedoc": "^0.25.4",
+    "ts-jest": "^29.1.2",
+    "typedoc": "^0.25.7",
     "typedoc-plugin-markdown": "^3.17.1",
     "typescript": "^5.3.3"
   }

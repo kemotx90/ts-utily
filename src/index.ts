@@ -9,3 +9,4 @@ export * from './utils/sort-utils';
 export * from './utils/object-utils';
 export * from './utils/date-utils';
 export * from './utils/file-utils';
+export * from './utils/uuid-utils';
