@@ -1,6 +1,6 @@
 {
   "name": "ts-utily",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "description": "Typescript utils library",
   "homepage": "https://github.com/kemotx90/ts-utily#readme",
   "main": "dist/ts-utily.js",
