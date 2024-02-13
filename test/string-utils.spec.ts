@@ -163,7 +163,7 @@ describe('populateTemplate function', () => {
             { job: 'Programmer' },
         ];
 
-        const expected = 'Hello, my name is John, I am from {location}';
+        const expected = 'Hello, my name is John, I am from ';
         expect(populateTemplate(string, placeholders)).toEqual(expected);
     });
 });
