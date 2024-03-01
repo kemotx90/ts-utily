@@ -1,5 +1,6 @@
 import {notPresent} from "./common-utils";
 import {DayOfWeek} from "../model/day-of-week-enum";
+import {DeltaDateResult} from "../model/delta-date-result";
 
 /**
  * Checks if two dates are the same (year, month, and day).
@@ -248,4 +249,41 @@ export const setTime = (date: Date | number | null | undefined, time: string): D
     } catch (e) {
         console.error('not valid date or time', e);
     }
+}
+
+/**
+ * Calculates the time difference between two dates and returns the result as an object containing the number of years, months, days, hours, minutes, and seconds.
+ *
+ * @param {Date|number} date1 - The first date.
+ * @param {Date|number} date2 - The second date.
+ * @returns {DeltaDateResult} - The result object containing the time difference in years, months, days, hours, minutes, and seconds.
+ */
+export const getDeltaTimeFromTwoDates = (date1: Date | number, date2: Date | number): DeltaDateResult => {
+    let diffInSeconds = Math.abs(new Date(date1).getTime() - new Date(date2).getTime()) / 1000;
+
+    const years = Math.floor(diffInSeconds / 31536000);
+    diffInSeconds %= 31536000;
+
+    const months = Math.floor(diffInSeconds / 2592000);
+    diffInSeconds %= 2592000;
+
+    const days = Math.floor(diffInSeconds / 86400);
+    diffInSeconds %= 86400;
+
+    const hours = Math.floor(diffInSeconds / 3600) % 24;
+    diffInSeconds %= 3600;
+
+    const minutes = Math.floor(diffInSeconds / 60) % 60;
+    diffInSeconds %= 60;
+
+    const seconds = Math.floor(diffInSeconds % 60);
+
+    return {
+        years: years,
+        months: months,
+        days: days,
+        hours: hours,
+        minutes: minutes,
+        seconds: seconds
+    } as DeltaDateResult;
 }

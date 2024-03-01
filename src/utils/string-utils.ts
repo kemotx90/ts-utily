@@ -154,9 +154,6 @@ export const populateTemplate = (string: string | undefined, placeholders: any[]
     const placeholderRegex: RegExp = /\{(\w+?)}/g;
     return string?.replace(placeholderRegex, (_, name) => {
         const element: any = placeholders?.find(el => el[name]);
-        if (notPresent(element)) {
-            console.warn(`element {${name}} not found`)
-        }
         return element ? element[name] : '';
     });
 }

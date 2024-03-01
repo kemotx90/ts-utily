@@ -1,12 +1,13 @@
 import {
     addDays,
-    dateWith00Mins, dayBetween,
+    dateWith00Mins, dayBetween, getDeltaTimeFromTwoDates,
     getHoursAndMinutesFromDateAsString, getNextDayOfWeekFromDate,
     getTomorrow, hoursBetween,
     instantToDate, isAfter, isBefore, isBetween,
     monthFromDate, removeDays, sameDate, setTime, toLocalDate
 } from "../src/index";
 import {DayOfWeek} from "../src/model/day-of-week-enum";
+import {DeltaDateResult} from "../src/model/delta-date-result";
 
 describe('sameDate function', () => {
     it('should return true if two dates are the same', () => {
@@ -281,9 +282,12 @@ describe('getNextDayOfWeekFromDate', () => {
 describe('getTomorrow', () => {
     it('should return tomorrow\'s date when no date is provided', () => {
         const today = new Date();
-        const expectedDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+        const expectedDate = addDays(today, 1);
+        expectedDate.setSeconds(0 , 0);
+        const tomorrow = getTomorrow();
+        tomorrow.setSeconds(0, 0);
 
-        expect(getTomorrow()).toStrictEqual(expectedDate);
+        expect(tomorrow).toStrictEqual(expectedDate);
     });
 
     it('should return the next day of the provided date', () => {
@@ -388,7 +392,7 @@ describe('dateWith00Mins function', () => {
         expect(result.getMinutes()).toBe(0);
         expect(result.getSeconds()).toBe(0);
         expect(result.getMilliseconds()).toBe(0);
-        expect(result.getFullYear()).toBe(2023);
+        expect(result.getFullYear()).toBe(new Date().getFullYear());
         expect(result.getMonth()).toBe(new Date().getMonth());
         expect(result.getDate()).toBe(new Date().getDate());
         expect(result.getHours()).toBe(new Date().getHours());
@@ -442,5 +446,38 @@ describe('setTime function from date-utils file', () => {
         const newDate = setTime(timestamp, time);
         expect(newDate?.getHours()).toBe(12);
         expect(newDate?.getMinutes()).toBe(0);
+    });
+});
+
+describe('getDeltaTimeFromTwoDates', () => {
+    it('should return correctly formed DeltaDateResult when given valid input', () => {
+        const date1 = new Date(2023, 3, 19, 12, 0, 0);
+        const date2 = new Date(2023, 3, 20, 12, 0, 0);
+
+        const expectedResult: DeltaDateResult = {
+            years: 0,
+            months: 0,
+            days: 1,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        }
+
+        expect(getDeltaTimeFromTwoDates(date1, date2)).toEqual(expectedResult);
+    });
+
+    it('should return correctly formed DeltaDateResult when given two equal dates', () => {
+        const date1 = new Date(2023, 3, 19, 12, 0, 0);
+
+        const expectedResult: DeltaDateResult = {
+            years: 0,
+            months: 0,
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        }
+
+        expect(getDeltaTimeFromTwoDates(date1, date1)).toEqual(expectedResult);
     });
 });
