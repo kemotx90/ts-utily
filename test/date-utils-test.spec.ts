@@ -494,40 +494,47 @@ describe('getDeltaTimeFromTwoDates', () => {
     });
 });
 
-describe('getDatesBetween function', () => {
-    test('should return array of dates between two dates', () => {
-        const dateStart: Date = new Date(2024, 6, 15);
-        const dateEnd: Date = new Date(2024, 6, 18);
-        const result = getDatesBetween(dateStart, dateEnd);
+describe('getDatesBetween', () => {
+    // A basic test case for the function
+    it('should return all dates between two given dates', () => {
+        const startDate = new Date('2022-01-01');
+        const endDate = new Date('2022-01-05');
 
-        expect(result.length).toBe(4);
-        expect(result[0]).toStrictEqual(dateStart);
-        expect(result[result.length - 1]).toStrictEqual(dateEnd);
+        const result = getDatesBetween(startDate, endDate);
+
+        const expected = ['2022-01-01', '2022-01-02', '2022-01-03', '2022-01-04', '2022-01-05'].map(d => new Date(d));
+
+        expect(result).toEqual(expected);
     });
 
-    test('should return only one date for the same dates', () => {
-        const dateStart: Date = new Date(2024, 6, 15);
-        const dateEnd: Date = new Date(2024, 6, 15);
-        const result = getDatesBetween(dateStart, dateEnd);
+    // A test case when providing timestamps instead of Date objects
+    it('should work with timestamps', () => {
+        const startDate = new Date('2022-01-01').getTime();
+        const endDate = new Date('2022-01-05').getTime();
 
-        expect(result.length).toBe(1);
-        expect(result[0]).toStrictEqual(dateStart);
-        expect(result[result.length - 1]).toStrictEqual(dateEnd);
+        const result = getDatesBetween(startDate, endDate);
+
+        const expected = ['2022-01-01', '2022-01-02', '2022-01-03', '2022-01-04', '2022-01-05'].map(d => new Date(d));
+
+        expect(result).toEqual(expected);
     });
 
-    test('should return array of dates for number date params', () => {
-        const dateStart: number = Date.parse('2024-07-15');
-        const dateEnd: number = Date.parse('2024-07-18');
-        const result = getDatesBetween(dateStart, dateEnd);
+    // Test case to check if function returns empty array when one or both parameters are missing
+    it('should return an empty array if one parameter is missing', () => {
+        const result = getDatesBetween(new Date('2022-01-01'), undefined!);
+        expect(result).toEqual([]);
 
-        expect(result.length).toBe(4);
+        const result2 = getDatesBetween(undefined!, new Date('2022-01-05'));
+        expect(result2).toEqual([]);
     });
 
-    test('should return an empty array for non-date parameters', () => {
-        const dateStart: any = null;
-        const dateEnd: any = 'dummy-date';
-        const result = getDatesBetween(dateStart, dateEnd);
+    // Test to check if function returns array with only one date when start and end dates are same
+    it('should return array with only one date when start and end dates are same', () => {
+        const startDate = new Date('2022-01-01');
+        const endDate = new Date('2022-01-01');
 
-        expect(result).toStrictEqual([]);
+        const result = getDatesBetween(startDate, endDate);
+
+        expect(result).toEqual([new Date('2022-01-01')]);
     });
 });
