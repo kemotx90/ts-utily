@@ -1,4 +1,6 @@
-[ts-utily](README.md) / Exports
+***
+
+[ts-utily]() / Exports
 
 # ts-utily
 
@@ -6,75 +8,75 @@
 
 ### Functions
 
-- [addDays](modules.md#adddays)
-- [arrayBufferToBase64](modules.md#arraybuffertobase64)
-- [at](modules.md#at)
-- [capitalize](modules.md#capitalize)
-- [capitalizeFully](modules.md#capitalizefully)
-- [compare](modules.md#compare)
-- [convertArrayBufferToUint8Array](modules.md#convertarraybuffertouint8array)
-- [convertArrayToRecord](modules.md#convertarraytorecord)
-- [convertIndexSignaturesToMap](modules.md#convertindexsignaturestomap)
-- [convertMapToIndexSignatures](modules.md#convertmaptoindexsignatures)
-- [convertRecordToArray](modules.md#convertrecordtoarray)
-- [createArrayBufferFromString](modules.md#createarraybufferfromstring)
-- [createBlobFromBase64AndMimeType](modules.md#createblobfrombase64andmimetype)
-- [createBlobFromSourceAndMimeType](modules.md#createblobfromsourceandmimetype)
-- [createFileFromBase64AndMimeType](modules.md#createfilefrombase64andmimetype)
-- [createUint8ArrayFromBase64](modules.md#createuint8arrayfrombase64)
-- [dateWith00Mins](modules.md#datewith00mins)
-- [dayBetween](modules.md#daybetween)
-- [deleteElementCollection](modules.md#deleteelementcollection)
-- [equalsCollection](modules.md#equalscollection)
-- [fileIs](modules.md#fileis)
-- [findOrDefault](modules.md#findordefault)
-- [get](modules.md#get)
-- [getDeltaTimeFromTwoDates](modules.md#getdeltatimefromtwodates)
-- [getExtensionFromFileName](modules.md#getextensionfromfilename)
-- [getExtensionFromMimeType](modules.md#getextensionfrommimetype)
-- [getHoursAndMinutesFromDateAsString](modules.md#gethoursandminutesfromdateasstring)
-- [getMimeTypeFromExtension](modules.md#getmimetypefromextension)
-- [getNextDayOfWeekFromDate](modules.md#getnextdayofweekfromdate)
-- [getOrDefault](modules.md#getordefault)
-- [getOrDefaultCollection](modules.md#getordefaultcollection)
-- [getOrDefaultString](modules.md#getordefaultstring)
-- [getTomorrow](modules.md#gettomorrow)
-- [hoursBetween](modules.md#hoursbetween)
-- [includes](modules.md#includes)
-- [instantToDate](modules.md#instanttodate)
-- [isAfter](modules.md#isafter)
-- [isBefore](modules.md#isbefore)
-- [isBetween](modules.md#isbetween)
-- [isEmptyCollection](modules.md#isemptycollection)
-- [isEmptyString](modules.md#isemptystring)
-- [isEqual](modules.md#isequal)
-- [isNotEmptyCollection](modules.md#isnotemptycollection)
-- [isNotEmptyString](modules.md#isnotemptystring)
-- [isNumber](modules.md#isnumber)
-- [isString](modules.md#isstring)
-- [monthFromDate](modules.md#monthfromdate)
-- [notPresent](modules.md#notpresent)
-- [parzializeArray](modules.md#parzializearray)
-- [parzializeArrayByKeys](modules.md#parzializearraybykeys)
-- [percentage](modules.md#percentage)
-- [populateTemplate](modules.md#populatetemplate)
-- [present](modules.md#present)
-- [removeDays](modules.md#removedays)
-- [removeDuplicateByKey](modules.md#removeduplicatebykey)
-- [removeDuplicateByKeys](modules.md#removeduplicatebykeys)
-- [removeNullOrUndefinedFieldsFromObject](modules.md#removenullorundefinedfieldsfromobject)
-- [removeWhiteSpace](modules.md#removewhitespace)
-- [replaceAll](modules.md#replaceall)
-- [sameDate](modules.md#samedate)
-- [setTime](modules.md#settime)
-- [sortByObjectValues](modules.md#sortbyobjectvalues)
-- [sortNumericString](modules.md#sortnumericstring)
-- [ternaryOperator](modules.md#ternaryoperator)
-- [toBoolean](modules.md#toboolean)
-- [toLocalDate](modules.md#tolocaldate)
-- [toLocalDateTime](modules.md#tolocaldatetime)
-- [toNumber](modules.md#tonumber)
-- [typizeBlobFromFileName](modules.md#typizeblobfromfilename)
+- [addDays]()
+- [arrayBufferToBase64]()
+- [at]()
+- [capitalize]()
+- [capitalizeFully]()
+- [compare]()
+- [convertArrayBufferToUint8Array]()
+- [convertArrayToRecord]()
+- [convertIndexSignaturesToMap]()
+- [convertMapToIndexSignatures]()
+- [convertRecordToArray]()
+- [createArrayBufferFromString]()
+- [createBlobFromBase64AndMimeType]()
+- [createBlobFromSourceAndMimeType]()
+- [createFileFromBase64AndMimeType]()
+- [createUint8ArrayFromBase64]()
+- [dateWith00Mins]()
+- [dayBetween]()
+- [deleteElementCollection]()
+- [equalsCollection]()
+- [fileIs]()
+- [findOrDefault]()
+- [get]()
+- [getDeltaTimeFromTwoDates]()
+- [getExtensionFromFileName]()
+- [getExtensionFromMimeType]()
+- [getHoursAndMinutesFromDateAsString]()
+- [getMimeTypeFromExtension]()
+- [getNextDayOfWeekFromDate]()
+- [getOrDefault]()
+- [getOrDefaultCollection]()
+- [getOrDefaultString]()
+- [getTomorrow]()
+- [hoursBetween]()
+- [includes]()
+- [instantToDate]()
+- [isAfter]()
+- [isBefore]()
+- [isBetween]()
+- [isEmptyCollection]()
+- [isEmptyString]()
+- [isEqual]()
+- [isNotEmptyCollection]()
+- [isNotEmptyString]()
+- [isNumber]()
+- [isString]()
+- [monthFromDate]()
+- [notPresent]()
+- [parzializeArray]()
+- [parzializeArrayByKeys]()
+- [percentage]()
+- [populateTemplate]()
+- [present]()
+- [removeDays]()
+- [removeDuplicateByKey]()
+- [removeDuplicateByKeys]()
+- [removeNullOrUndefinedFieldsFromObject]()
+- [removeWhiteSpace]()
+- [replaceAll]()
+- [sameDate]()
+- [setTime]()
+- [sortByObjectValues]()
+- [sortNumericString]()
+- [ternaryOperator]()
+- [toBoolean]()
+- [toLocalDate]()
+- [toLocalDateTime]()
+- [toNumber]()
+- [typizeBlobFromFileName]()
 
 ## Functions
 
@@ -86,10 +88,10 @@ Adds specified number of days to a given Date object.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `d` | `Date` | `undefined` | The Date object to which days are to be added. |
-| `days` | `number` | `1` | The number of days to be added. Defaults to 1 if not provided. |
+| Name   | Type     | Default value | Description                                                    |
+|:-------|:---------|:--------------|:---------------------------------------------------------------|
+| `d`    | `Date`   | `undefined`   | The Date object to which days are to be added.                 |
+| `days` | `number` | `1`           | The number of days to be added. Defaults to 1 if not provided. |
 
 #### Returns
 
@@ -111,8 +113,8 @@ Converts an ArrayBuffer to a Base64 string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type         | Description                 |
+|:---------|:-------------|:----------------------------|
 | `buffer` | `Uint8Array` | The ArrayBuffer to convert. |
 
 #### Returns
@@ -131,26 +133,28 @@ ___
 
 ▸ **at**\<`T`\>(`collection`, `index`): `undefined` \| `T`
 
-The function `at` returns the element at the specified index in a collection, or undefined if the collection is empty or the index is out of bounds.
+The function `at` returns the element at the specified index in a collection, or undefined if the collection is empty or
+the index is out of bounds.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                                                                                                                                                                                       |
+|:-------------|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of type `T[]`, or it can be `undefined` or `null`. It represents the collection of elements from which we want to retrieve an element at a specific index. |
-| `index` | `number` | The `index` parameter is the position of the element you want to retrieve from the `collection`. It is a number that represents the index of the element in the array. |
+| `index`      | `number`                         | The `index` parameter is the position of the element you want to retrieve from the `collection`. It is a number that represents the index of the element in the array.                            |
 
 #### Returns
 
 `undefined` \| `T`
 
-the element at the specified index in the collection. If the collection is empty or the index is out of range, it will return undefined.
+the element at the specified index in the collection. If the collection is empty or the index is out of range, it will
+return undefined.
 
 #### Defined in
 
@@ -162,12 +166,13 @@ ___
 
 ▸ **capitalize**(`str`): `string`
 
-The `capitalize` function takes a string as input and returns the same string with the first letter of each word capitalized.
+The `capitalize` function takes a string as input and returns the same string with the first letter of each word
+capitalized.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                | Description                                                        |
+|:------|:------------------------------------|:-------------------------------------------------------------------|
 | `str` | `undefined` \| ``null`` \| `string` | The `str` parameter is a string that may be `undefined` or `null`. |
 
 #### Returns
@@ -190,8 +195,8 @@ The `capitalizeFully` function takes a string as input and returns a new string 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                | Description                                                             |
+|:------|:------------------------------------|:------------------------------------------------------------------------|
 | `str` | `undefined` \| ``null`` \| `string` | The `str` parameter is a string that can also be `undefined` or `null`. |
 
 #### Returns
@@ -210,13 +215,14 @@ ___
 
 ▸ **compare**(`s1`, `s2`): `number`
 
-The function "compare" compares two strings case-insensitively and returns -1 if the first string is smaller, 1 if the second string is smaller.
+The function "compare" compares two strings case-insensitively and returns -1 if the first string is smaller, 1 if the
+second string is smaller.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `s1` | `string` | The parameter `s1` is a string that represents the first string to be compared. |
+| Name | Type     | Description                                                                      |
+|:-----|:---------|:---------------------------------------------------------------------------------|
+| `s1` | `string` | The parameter `s1` is a string that represents the first string to be compared.  |
 | `s2` | `string` | The parameter `s2` is a string that represents the second string to be compared. |
 
 #### Returns
@@ -239,8 +245,8 @@ Converts an ArrayBuffer to a Uint8Array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type          | Description                      |
+|:--------------|:--------------|:---------------------------------|
 | `arrayBuffer` | `ArrayBuffer` | The ArrayBuffer to be converted. |
 
 #### Returns
@@ -263,16 +269,16 @@ Converts an array to a record by using the specified key from each element.
 
 #### Type parameters
 
-| Name | Description |
-| :------ | :------ |
-| `T` | The type of array elements. |
+| Name | Description                 |
+|:-----|:----------------------------|
+| `T`  | The type of array elements. |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `array` | `T`[] | The array to convert. |
-| `key` | keyof `T` | The key to use from each element. |
+| Name    | Type      | Description                       |
+|:--------|:----------|:----------------------------------|
+| `array` | `T`[]     | The array to convert.             |
+| `key`   | keyof `T` | The key to use from each element. |
 
 #### Returns
 
@@ -295,14 +301,14 @@ The function converts an object with index signatures to a Map.
 #### Type parameters
 
 | Name |
-| :------ |
-| `V` |
+|:-----|
+| `V`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `indexSignatures` | `undefined` \| \{ `[p: string]`: `V`;  } | An object that contains index signatures, where the keys are strings and the values can be of any type. |
+| Name              | Type                                    | Description                                                                                             |
+|:------------------|:----------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| `indexSignatures` | `undefined` \| { `[p: string]`: `V`;  } | An object that contains index signatures, where the keys are strings and the values can be of any type. |
 
 #### Returns
 
@@ -318,27 +324,28 @@ ___
 
 ### convertMapToIndexSignatures
 
-▸ **convertMapToIndexSignatures**\<`V`\>(`map`): `undefined` \| \{ `[p: string]`: `V`;  }
+▸ **convertMapToIndexSignatures**\<`V`\>(`map`): `undefined` \| { `[p: string]`: `V`; }
 
 The function converts a Map object to an object with index signatures in TypeScript.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `V` |
+|:-----|
+| `V`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                  | Description                                 |
+|:------|:--------------------------------------|:--------------------------------------------|
 | `map` | `undefined` \| `Map`\<`string`, `V`\> | A Map object that contains key-value pairs. |
 
 #### Returns
 
-`undefined` \| \{ `[p: string]`: `V`;  }
+`undefined` \| { `[p: string]`: `V`; }
 
-an object with index signatures, where the keys are strings and the values are of type V. If the input map is undefined, the function returns undefined.
+an object with index signatures, where the keys are strings and the values are of type V. If the input map is undefined,
+the function returns undefined.
 
 #### Defined in
 
@@ -354,15 +361,15 @@ Converts a record to an array of its values.
 
 #### Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | `T` | The type of the record values. |
-| `K` | extends `PropertyKey` | The type of the record keys. |
+| Name | Type                  | Description                    |
+|:-----|:----------------------|:-------------------------------|
+| `T`  | `T`                   | The type of the record values. |
+| `K`  | extends `PropertyKey` | The type of the record keys.   |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                 | Description            |
+|:---------|:---------------------|:-----------------------|
 | `record` | `Record`\<`K`, `T`\> | The record to convert. |
 
 #### Returns
@@ -385,8 +392,8 @@ Converts a string into an ArrayBuffer.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                 |
+|:---------|:---------|:----------------------------|
 | `string` | `string` | The string to be converted. |
 
 #### Returns
@@ -409,9 +416,9 @@ Create a Blob object from the given base64 string and MIME type.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `base64` | `string` | The base64 string. |
+| Name        | Type           | Description                |
+|:------------|:---------------|:---------------------------|
+| `base64`    | `string`       | The base64 string.         |
 | `MIME_Type` | `MimeTypeEnum` | The MIME type of the Blob. |
 
 #### Returns
@@ -434,10 +441,10 @@ Creates a Blob object from an array of blob parts and the MIME type.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `blobParts` | `BlobPart`[] | The array of blob parts to be combined into a Blob object. |
-| `MIME_Type` | `MimeTypeEnum` | The MIME type for the Blob object. |
+| Name        | Type           | Description                                                |
+|:------------|:---------------|:-----------------------------------------------------------|
+| `blobParts` | `BlobPart`[]   | The array of blob parts to be combined into a Blob object. |
+| `MIME_Type` | `MimeTypeEnum` | The MIME type for the Blob object.                         |
 
 #### Returns
 
@@ -459,11 +466,11 @@ Creates a file from a base64 encoded string and MIME type.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `base64` | `string` | The base64 encoded string representing the file. |
-| `MIME_Type` | `MimeTypeEnum` | The MIME type of the file. |
-| `fileName` | `string` | The name of the file. |
+| Name        | Type           | Description                                      |
+|:------------|:---------------|:-------------------------------------------------|
+| `base64`    | `string`       | The base64 encoded string representing the file. |
+| `MIME_Type` | `MimeTypeEnum` | The MIME type of the file.                       |
+| `fileName`  | `string`       | The name of the file.                            |
 
 #### Returns
 
@@ -485,8 +492,8 @@ Converts a base64 string to a Uint8Array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                   |
+|:---------|:---------|:------------------------------|
 | `base64` | `string` | The base64 string to convert. |
 
 #### Returns
@@ -510,8 +517,8 @@ If no date is provided, the current date and time will be used.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type               | Description                                                                  |
+|:--------|:-------------------|:-----------------------------------------------------------------------------|
 | `date?` | `number` \| `Date` | The date to modify. If not provided, the current date and time will be used. |
 
 #### Returns
@@ -534,9 +541,9 @@ Calculates the number of days between two dates.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `d1` | `Date` | The first date. |
+| Name | Type   | Description      |
+|:-----|:-------|:-----------------|
+| `d1` | `Date` | The first date.  |
 | `d2` | `Date` | The second date. |
 
 #### Returns
@@ -555,20 +562,21 @@ ___
 
 ▸ **deleteElementCollection**\<`T`\>(`collection`, `element`): `T`[]
 
-The `deleteElementCollection` function removes an element from a collection if it exists, otherwise it returns the original collection.
+The `deleteElementCollection` function removes an element from a collection if it exists, otherwise it returns the
+original collection.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                                                                                         |
+|:-------------|:---------------------------------|:----------------------------------------------------------------------------------------------------|
 | `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of elements of type `T`, or it can be `undefined` or `null`. |
-| `element` | `T` \| `Readonly`\<`T`\> | The `element` parameter represents the element that you want to delete from the `collection`. |
+| `element`    | `T` \| `Readonly`\<`T`\>         | The `element` parameter represents the element that you want to delete from the `collection`.       |
 
 #### Returns
 
@@ -591,14 +599,14 @@ The function checks if two collections are equal by comparing their lengths and 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `collection1` | `undefined` \| ``null`` \| `T`[] | The `collection1` parameter is an array of type `T`, or it can be `undefined` or `null`. |
+| Name          | Type                             | Description                                                                                                                                                              |
+|:--------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `collection1` | `undefined` \| ``null`` \| `T`[] | The `collection1` parameter is an array of type `T`, or it can be `undefined` or `null`.                                                                                 |
 | `collection2` | `undefined` \| ``null`` \| `T`[] | The `collection2` parameter is a generic array (`T[]`) or can be `undefined` or `null`. It represents the second collection that you want to compare with `collection1`. |
 
 #### Returns
@@ -621,9 +629,9 @@ Checks if a file matches the specified filename and mimeType.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `filename` | `string` | The name of the file. |
+| Name       | Type           | Description             |
+|:-----------|:---------------|:------------------------|
+| `filename` | `string`       | The name of the file.   |
 | `mimeType` | `MimeTypeEnum` | The MIME type to match. |
 
 #### Returns
@@ -642,21 +650,22 @@ ___
 
 ▸ **findOrDefault**\<`T`\>(`collection`, `element`, `defaultElement`): `T`
 
-The `findOrDefault` function searches for an element in a collection and returns it if found, otherwise it returns a default element.
+The `findOrDefault` function searches for an element in a collection and returns it if found, otherwise it returns a
+default element.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of elements of type `T`, or it can be `undefined` or `null`. It represents the collection of elements in which we want to find a specific element. |
-| `element` | `T` \| `Readonly`\<`T`\> | The `element` parameter represents the element that you want to find in the `collection`. |
-| `defaultElement` | `T` \| `Readonly`\<`T`\> | The `defaultElement` parameter is the value that will be returned if the `element` is not found in the `collection`. |
+| Name             | Type                             | Description                                                                                                                                                                               |
+|:-----------------|:---------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `collection`     | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of elements of type `T`, or it can be `undefined` or `null`. It represents the collection of elements in which we want to find a specific element. |
+| `element`        | `T` \| `Readonly`\<`T`\>         | The `element` parameter represents the element that you want to find in the `collection`.                                                                                                 |
+| `defaultElement` | `T` \| `Readonly`\<`T`\>         | The `defaultElement` parameter is the value that will be returned if the `element` is not found in the `collection`.                                                                      |
 
 #### Returns
 
@@ -679,13 +688,13 @@ The `get` function returns the input collection if it is not empty, otherwise it
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                                                                                                                                          |
+|:-------------|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is of type `T[] \| undefined \| null`. This means it can accept an array of type `T`, or it can be `undefined` or `null`. |
 
 #### Returns
@@ -704,13 +713,14 @@ ___
 
 ▸ **getDeltaTimeFromTwoDates**(`date1`, `date2`): `DeltaDateResult`
 
-Calculates the time difference between two dates and returns the result as an object containing the number of years, months, days, hours, minutes, and seconds.
+Calculates the time difference between two dates and returns the result as an object containing the number of years,
+months, days, hours, minutes, and seconds.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `date1` | `number` \| `Date` | The first date. |
+| Name    | Type               | Description      |
+|:--------|:-------------------|:-----------------|
+| `date1` | `number` \| `Date` | The first date.  |
 | `date2` | `number` \| `Date` | The second date. |
 
 #### Returns
@@ -733,8 +743,8 @@ Retrieves the file extension from a file name.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description    |
+|:-----------|:---------|:---------------|
 | `fileName` | `string` | The file name. |
 
 #### Returns
@@ -757,8 +767,8 @@ Retrieves file extension from given MIME type
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type           | Description               |
+|:-----------|:---------------|:--------------------------|
 | `mimeType` | `MimeTypeEnum` | The MIME type of the file |
 
 #### Returns
@@ -781,12 +791,12 @@ Converts a given date or number into a string representation of hours and minute
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `d` | `undefined` \| ``null`` \| `number` \| `Date` | `undefined` | The date or number to convert. |
-| `locales` | `LocalesArgument` | `undefined` | The locales argument for the `toLocaleTimeString` method. |
-| `hour?` | ``"numeric"`` \| ``"2-digit"`` | `"2-digit"` | The format of the hour: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit". |
-| `minute?` | ``"numeric"`` \| ``"2-digit"`` | `"2-digit"` | The format of the minute: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit". |
+| Name      | Type                                          | Default value | Description                                                                                                 |
+|:----------|:----------------------------------------------|:--------------|:------------------------------------------------------------------------------------------------------------|
+| `d`       | `undefined` \| ``null`` \| `number` \| `Date` | `undefined`   | The date or number to convert.                                                                              |
+| `locales` | `LocalesArgument`                             | `undefined`   | The locales argument for the `toLocaleTimeString` method.                                                   |
+| `hour?`   | ``"numeric"`` \| ``"2-digit"``                | `"2-digit"`   | The format of the hour: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit".   |
+| `minute?` | ``"numeric"`` \| ``"2-digit"``                | `"2-digit"`   | The format of the minute: "numeric" for a single digit, "2-digit" for a double digit. Default is "2-digit". |
 
 #### Returns
 
@@ -808,8 +818,8 @@ Retrieves the MIME type from a file extension.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description         |
+|:------------|:---------|:--------------------|
 | `extension` | `string` | The file extension. |
 
 #### Returns
@@ -832,10 +842,10 @@ Gets the next occurrence of a specified day of the week from a given date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `date` | `undefined` \| ``null`` \| `number` \| `Date` | The date from which to start searching. If not provided or invalid, the current date will be used. |
-| `dayOfWeek` | `DayOfWeek` | The day of the week to find the next occurrence of. |
+| Name        | Type                                          | Description                                                                                        |
+|:------------|:----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| `date`      | `undefined` \| ``null`` \| `number` \| `Date` | The date from which to start searching. If not provided or invalid, the current date will be used. |
+| `dayOfWeek` | `DayOfWeek`                                   | The day of the week to find the next occurrence of.                                                |
 
 #### Returns
 
@@ -853,26 +863,28 @@ ___
 
 ▸ **getOrDefault**\<`T`\>(`data`, `defaultValue`): `T`
 
-The `getOrDefault` function returns the provided data if it is not null or undefined, otherwise it returns the provided default value.
+The `getOrDefault` function returns the provided data if it is not null or undefined, otherwise it returns the provided
+default value.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `T` | The `data` parameter is the value that you want to check if it is null or undefined. |
-| `defaultValue` | `T` | The `defaultValue` parameter is the value that will be returned if the `data` parameter is `null` or `undefined`. |
+| Name           | Type | Description                                                                                                       |
+|:---------------|:-----|:------------------------------------------------------------------------------------------------------------------|
+| `data`         | `T`  | The `data` parameter is the value that you want to check if it is null or undefined.                              |
+| `defaultValue` | `T`  | The `defaultValue` parameter is the value that will be returned if the `data` parameter is `null` or `undefined`. |
 
 #### Returns
 
 `T`
 
-The function `getOrDefault` returns the value of `data` if it is not null or undefined, otherwise it returns the value of `defaultValue`.
+The function `getOrDefault` returns the value of `data` if it is not null or undefined, otherwise it returns the value
+of `defaultValue`.
 
 #### Defined in
 
@@ -884,20 +896,21 @@ ___
 
 ▸ **getOrDefaultCollection**\<`T`\>(`collection`, `defaultList`): `T`[]
 
-The `getOrDefaultCollection` function returns the provided collection if it is not empty, otherwise it returns the default list.
+The `getOrDefaultCollection` function returns the provided collection if it is not empty, otherwise it returns the
+default list.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is a variable that represents an array of elements of type `T`, or it can be `undefined` or `null`. |
-| `defaultList` | `T`[] | The `defaultList` parameter is an array of type `T[]`. It is the list that will be returned if the `collection` parameter is empty or undefined. |
+| Name          | Type                             | Description                                                                                                                                      |
+|:--------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `collection`  | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is a variable that represents an array of elements of type `T`, or it can be `undefined` or `null`.                   |
+| `defaultList` | `T`[]                            | The `defaultList` parameter is an array of type `T[]`. It is the list that will be returned if the `collection` parameter is empty or undefined. |
 
 #### Returns
 
@@ -919,10 +932,10 @@ The `getOrDefaultString` function returns a string value if it is not empty, oth
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `string` | `undefined` \| ``null`` \| `string` | `undefined` | The `string` parameter is a string value that can be either a valid string, `undefined`, or `null`. |
-| `defaultValue?` | `string` | `''` | The `defaultValue` parameter is a string that specifies the value to return if the `string` parameter is empty, undefined, or null. If no `defaultValue` is provided, it defaults to an empty string (''). |
+| Name            | Type                                | Default value | Description                                                                                                                                                                                                |
+|:----------------|:------------------------------------|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `string`        | `undefined` \| ``null`` \| `string` | `undefined`   | The `string` parameter is a string value that can be either a valid string, `undefined`, or `null`.                                                                                                        |
+| `defaultValue?` | `string`                            | `''`          | The `defaultValue` parameter is a string that specifies the value to return if the `string` parameter is empty, undefined, or null. If no `defaultValue` is provided, it defaults to an empty string (''). |
 
 #### Returns
 
@@ -944,8 +957,8 @@ Returns tomorrow's date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type               | Description                           |
+|:-----|:-------------------|:--------------------------------------|
 | `d?` | `number` \| `Date` | Optional date to be used as the base. |
 
 #### Returns
@@ -968,11 +981,11 @@ Calculates the number of hours between two given dates.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `d1` | `Date` | `undefined` | The first date. |
-| `d2` | `Date` | `undefined` | The second date. |
-| `withAbs?` | `boolean` | `true` | Whether to return the absolute difference or not. |
+| Name       | Type      | Default value | Description                                       |
+|:-----------|:----------|:--------------|:--------------------------------------------------|
+| `d1`       | `Date`    | `undefined`   | The first date.                                   |
+| `d2`       | `Date`    | `undefined`   | The second date.                                  |
+| `withAbs?` | `boolean` | `true`        | Whether to return the absolute difference or not. |
 
 #### Returns
 
@@ -994,9 +1007,9 @@ The function checks if a given string contains another given string, ignoring ca
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `string1` | `undefined` \| ``null`` \| `string` | A string that can be undefined or null. |
+| Name      | Type                                | Description                                                                                                            |
+|:----------|:------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| `string1` | `undefined` \| ``null`` \| `string` | A string that can be undefined or null.                                                                                |
 | `string2` | `undefined` \| ``null`` \| `string` | The `string2` parameter is a string that represents the substring that we want to check if it is present in `string1`. |
 
 #### Returns
@@ -1019,8 +1032,8 @@ Converts the given instant to a Date object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type               | Description                                                                 |
+|:-----------|:-------------------|:----------------------------------------------------------------------------|
 | `instant?` | `string` \| `Date` | The instant to convert. If not provided, the current date and time is used. |
 
 #### Returns
@@ -1032,7 +1045,13 @@ Converts the given instant to a Date object.
 **`Example`**
 
 ```ts
-use for convert Instant(like as java object) to javascript date
+use
+for convert Instant(like as java
+object
+)
+to
+javascript
+date
 ```
 
 #### Defined in
@@ -1049,10 +1068,10 @@ Checks if a given date is after another date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `d1` | `Date` | The first date. |
-| `d2` | `Date` | The second date. |
+| Name                        | Type      | Description                                                  |
+|:----------------------------|:----------|:-------------------------------------------------------------|
+| `d1`                        | `Date`    | The first date.                                              |
+| `d2`                        | `Date`    | The second date.                                             |
 | `matchOnlyForYearMonthDay?` | `boolean` | Optional parameter to match only up to year, month, and day. |
 
 #### Returns
@@ -1075,10 +1094,10 @@ Determines if the given date is before the reference date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `d1` | `Date` | The date to compare. |
-| `d2` | `Date` | The reference date. |
+| Name                        | Type      | Description                                                                                           |
+|:----------------------------|:----------|:------------------------------------------------------------------------------------------------------|
+| `d1`                        | `Date`    | The date to compare.                                                                                  |
+| `d2`                        | `Date`    | The reference date.                                                                                   |
 | `matchOnlyForYearMonthDay?` | `boolean` | Optional flag to indicate if the dates should only match for year, month, and day. Defaults to false. |
 
 #### Returns
@@ -1101,11 +1120,11 @@ Checks if a given date falls between a start and end date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `dateToMatch` | `Date` | The date to check. |
-| `start` | `Date` | The start date. |
-| `end` | `Date` | The end date. |
+| Name                        | Type      | Description                                                                                                      |
+|:----------------------------|:----------|:-----------------------------------------------------------------------------------------------------------------|
+| `dateToMatch`               | `Date`    | The date to check.                                                                                               |
+| `start`                     | `Date`    | The start date.                                                                                                  |
+| `end`                       | `Date`    | The end date.                                                                                                    |
 | `matchOnlyForYearMonthDay?` | `boolean` | (Optional) Specifies whether to only consider the year, month, and day when checking the date. Default is false. |
 
 #### Returns
@@ -1129,13 +1148,13 @@ The function `isEmptyCollection` checks if a collection is empty or not.
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                                                                                                                                 |
+|:-------------|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
 | `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is a generic type `T[]` which represents an array of elements of type `T`. It can also be `undefined` or `null`. |
 
 #### Returns
@@ -1158,8 +1177,8 @@ The function checks if a string is empty, including cases where the string is un
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                | Description                                                                                                                                  |
+|:---------|:------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
 | `string` | `undefined` \| ``null`` \| `string` | The `string` parameter is of type `string \| undefined \| null`, which means it can accept a value of type `string`, `undefined`, or `null`. |
 
 #### Returns
@@ -1183,13 +1202,13 @@ The `isEqual` function checks if all the given objects are equal by comparing th
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type  | Description                                                                                                                                                                                                                                       |
+|:-------------|:------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `...objects` | `T`[] | The `objects` parameter is a rest parameter that allows you to pass in multiple objects of type `T`. The rest parameter syntax (`...objects`) allows you to pass any number of arguments, which will be collected into an array called `objects`. |
 
 #### Returns
@@ -1213,13 +1232,13 @@ The function `isNotEmptyCollection` checks if a collection is not empty.
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                             | Description                                                                                                                                          |
+|:-------------|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is of type `T[] \| undefined \| null`. This means it can accept an array of type `T`, or it can be `undefined` or `null`. |
 
 #### Returns
@@ -1242,8 +1261,8 @@ The function `isNotEmptyString` checks if a string is not empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                | Description                                                                 |
+|:---------|:------------------------------------|:----------------------------------------------------------------------------|
 | `string` | `undefined` \| ``null`` \| `string` | The parameter "string" is of type string and can also be undefined or null. |
 
 #### Returns
@@ -1267,14 +1286,14 @@ The function `isNumber` checks if a value is a number in TypeScript.
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `T` | The `value` parameter is the value that you want to check if it is a number. It can be of any type `T`. |
+| Name    | Type | Description                                                                                             |
+|:--------|:-----|:--------------------------------------------------------------------------------------------------------|
+| `value` | `T`  | The `value` parameter is the value that you want to check if it is a number. It can be of any type `T`. |
 
 #### Returns
 
@@ -1297,14 +1316,14 @@ The function `isString` checks if an object is a string or an instance of the St
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | `T` | The `obj` parameter is a generic type `T`, which means it can be any type. |
+| Name  | Type | Description                                                                |
+|:------|:-----|:---------------------------------------------------------------------------|
+| `obj` | `T`  | The `obj` parameter is a generic type `T`, which means it can be any type. |
 
 #### Returns
 
@@ -1326,11 +1345,11 @@ Returns the month from a given date in the specified format.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `date` | `Date` | `undefined` | The date from which to extract the month. |
-| `locales?` | `LocalesArgument` | `'default'` | A string representing a BCP 47 language tag, or an array of such strings. |
-| `month?` | ``"numeric"`` \| ``"2-digit"`` \| ``"long"`` \| ``"short"`` \| ``"narrow"`` | `"long"` | The format in which to return the month. Possible values are: - "numeric": Returns the month as a digit (e.g. 1, 2, 3, ... 12). - "2-digit": Returns the month as a two-digit number with leading zero (e.g. 01, 02, 03, ... 12). - "long": Returns the full name of the month (e.g. January, February, ... December). - "short": Returns the abbreviated name of the month (e.g. Jan, Feb, ... Dec). - "narrow": Returns the narrow name of the month (e.g. J, F, ... D). - undefined or not provided: Returns the default long format. |
+| Name       | Type                                                                        | Default value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|:-----------|:----------------------------------------------------------------------------|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `date`     | `Date`                                                                      | `undefined`   | The date from which to extract the month.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `locales?` | `LocalesArgument`                                                           | `'default'`   | A string representing a BCP 47 language tag, or an array of such strings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `month?`   | ``"numeric"`` \| ``"2-digit"`` \| ``"long"`` \| ``"short"`` \| ``"narrow"`` | `"long"`      | The format in which to return the month. Possible values are: - "numeric": Returns the month as a digit (e.g. 1, 2, 3, ... 12). - "2-digit": Returns the month as a two-digit number with leading zero (e.g. 01, 02, 03, ... 12). - "long": Returns the full name of the month (e.g. January, February, ... December). - "short": Returns the abbreviated name of the month (e.g. Jan, Feb, ... Dec). - "narrow": Returns the narrow name of the month (e.g. J, F, ... D). - undefined or not provided: Returns the default long format. |
 
 #### Returns
 
@@ -1353,13 +1372,13 @@ The function `notPresent` checks if any of the arguments passed to it are not pr
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type  | Description                                                                                                            |
+|:----------|:------|:-----------------------------------------------------------------------------------------------------------------------|
 | `...args` | `T`[] | The `args` parameter is a rest parameter of type `T[]`, which means it can accept any number of arguments of type `T`. |
 
 #### Returns
@@ -1378,20 +1397,21 @@ ___
 
 ▸ **parzializeArray**\<`T`\>(`array`, `section`): `undefined` \| `T`[][]
 
-The function `parzializeArray` takes an array and a section size as input and returns an array of arrays, where each subarray contains a section of the original array.
+The function `parzializeArray` takes an array and a section size as input and returns an array of arrays, where each
+subarray contains a section of the original array.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `array` | `undefined` \| ``null`` \| `T`[] | The `array` parameter is an array of elements of type `T`, or it can be `undefined` or `null`. |
-| `section` | `number` | The parameter "section" represents the size of each section or chunk that the array will be divided into. |
+| Name      | Type                             | Description                                                                                               |
+|:----------|:---------------------------------|:----------------------------------------------------------------------------------------------------------|
+| `array`   | `undefined` \| ``null`` \| `T`[] | The `array` parameter is an array of elements of type `T`, or it can be `undefined` or `null`.            |
+| `section` | `number`                         | The parameter "section" represents the size of each section or chunk that the array will be divided into. |
 
 #### Returns
 
@@ -1409,20 +1429,21 @@ ___
 
 ▸ **parzializeArrayByKeys**\<`T`\>(`array`, `keys`): `undefined` \| `T`[][]
 
-The function `parzializeArrayByKeys` takes an array of objects and an array of keys, and returns a partially grouped array based on the specified keys.
+The function `parzializeArrayByKeys` takes an array of objects and an array of keys, and returns a partially grouped
+array based on the specified keys.
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                             | Description                                                                                   |
+|:--------|:---------------------------------|:----------------------------------------------------------------------------------------------|
 | `array` | `undefined` \| ``null`` \| `T`[] | The `array` parameter is an array of objects of type `T`, or it can be `undefined` or `null`. |
-| `keys` | keyof `T`[] | An array of keys that represent the properties of the objects in the array. |
+| `keys`  | keyof `T`[]                      | An array of keys that represent the properties of the objects in the array.                   |
 
 #### Returns
 
@@ -1444,10 +1465,10 @@ The function calculates the percentage of a value in relation to a total value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value parameter represents the specific value that you want to calculate the percentage of. It is a number that you want to find the percentage of in relation to the totalValue. |
-| `totalValue` | `number` | The total value represents the maximum value or the total amount that you want to calculate the percentage of. |
+| Name         | Type     | Description                                                                                                                                                                           |
+|:-------------|:---------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `value`      | `number` | The value parameter represents the specific value that you want to calculate the percentage of. It is a number that you want to find the percentage of in relation to the totalValue. |
+| `totalValue` | `number` | The total value represents the maximum value or the total amount that you want to calculate the percentage of.                                                                        |
 
 #### Returns
 
@@ -1469,10 +1490,10 @@ Replaces placeholders in a string with corresponding values from an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `string` | `undefined` \| `string` | The string containing placeholders. |
-| `placeholders` | `any`[] | An array of objects containing key-value pairs, where the key represents a placeholder and the value is the replacement value. |
+| Name           | Type                    | Description                                                                                                                    |
+|:---------------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| `string`       | `undefined` \| `string` | The string containing placeholders.                                                                                            |
+| `placeholders` | `any`[]                 | An array of objects containing key-value pairs, where the key represents a placeholder and the value is the replacement value. |
 
 #### Returns
 
@@ -1483,7 +1504,17 @@ Replaces placeholders in a string with corresponding values from an array.
 **`Example`**
 
 ```ts
-populateTemplate('Replace my text {myReplacePlaceholder}', [{name: 'Valery', age: 20, myReplacePlaceholder: 'test this'}, {name: 'Marcus', age: 21}]) => Replace my text test this
+populateTemplate('Replace my text {myReplacePlaceholder}', [{
+    name: 'Valery',
+    age: 20,
+    myReplacePlaceholder: 'test this'
+}, {name: 'Marcus', age: 21}])
+=>
+Replace
+my
+text
+test
+this
 ```
 
 #### Defined in
@@ -1501,13 +1532,13 @@ The `present` function checks if all the arguments passed to it are not null or 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type  | Description                                                                                               |
+|:----------|:------|:----------------------------------------------------------------------------------------------------------|
 | `...args` | `T`[] | args is a rest parameter of type T[]. It allows the function to accept any number of arguments of type T. |
 
 #### Returns
@@ -1530,10 +1561,10 @@ Removes the specified number of days from a given date.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `d` | `Date` | `undefined` | The date to remove days from. |
-| `days` | `number` | `1` | The number of days to remove. Defaults to 1 if not provided. |
+| Name   | Type     | Default value | Description                                                  |
+|:-------|:---------|:--------------|:-------------------------------------------------------------|
+| `d`    | `Date`   | `undefined`   | The date to remove days from.                                |
+| `days` | `number` | `1`           | The number of days to remove. Defaults to 1 if not provided. |
 
 #### Returns
 
@@ -1556,15 +1587,15 @@ The function `removeDuplicatesByKey` removes duplicate elements from a collectio
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`. |
-| `key?` | keyof `T` | The `key` parameter is an optional parameter that specifies the property of the objects in the `collection` array that should be used as the key for removing duplicates. If `key` is not provided, the entire objects in the `collection` array will be compared for duplicates. |
+| Name         | Type                             | Description                                                                                                                                                                                                                                                                       |
+|:-------------|:---------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`.                                                                                                                                                                              |
+| `key?`       | keyof `T`                        | The `key` parameter is an optional parameter that specifies the property of the objects in the `collection` array that should be used as the key for removing duplicates. If `key` is not provided, the entire objects in the `collection` array will be compared for duplicates. |
 
 #### Returns
 
@@ -1587,15 +1618,15 @@ The `removeDuplicateByKeys` function removes duplicate elements from a collectio
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`. |
-| `keys` | keyof `T`[] | The `keys` parameter is an array of keys that are used to determine uniqueness in the collection. Each element in the array represents a key in the objects of the collection. |
+| Name         | Type                             | Description                                                                                                                                                                    |
+|:-------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `collection` | `undefined` \| ``null`` \| `T`[] | The `collection` parameter is an array of objects of type `T`. It can also be `undefined` or `null`.                                                                           |
+| `keys`       | keyof `T`[]                      | The `keys` parameter is an array of keys that are used to determine uniqueness in the collection. Each element in the array represents a key in the objects of the collection. |
 
 #### Returns
 
@@ -1618,14 +1649,14 @@ The function removes fields with null or undefined values from an object.
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `T` | The `value` parameter is the object from which you want to remove fields that have `null` or `undefined` values. |
+| Name    | Type | Description                                                                                                      |
+|:--------|:-----|:-----------------------------------------------------------------------------------------------------------------|
+| `value` | `T`  | The `value` parameter is the object from which you want to remove fields that have `null` or `undefined` values. |
 
 #### Returns
 
@@ -1636,7 +1667,16 @@ either the input value `T` or `undefined`.
 **`Example`**
 
 ```ts
-example of usage: cleaning object before store into DB(JSON type colum)
+example
+of
+usage: cleaning
+object
+before
+store
+into
+DB(JSON
+type colum
+)
 ```
 
 #### Defined in
@@ -1653,8 +1693,8 @@ The `removeWhiteSpace` function removes all white spaces from a given string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                | Description                                                                                      |
+|:------|:------------------------------------|:-------------------------------------------------------------------------------------------------|
 | `str` | `undefined` \| ``null`` \| `string` | The `str` parameter is a string that can be either a valid string value, `undefined`, or `null`. |
 
 #### Returns
@@ -1673,15 +1713,16 @@ ___
 
 ▸ **replaceAll**(`originalString`, `occurrenceToReplace`, `replaceWith`): `string`
 
-The `replaceAll` function replaces all occurrences of a specified string in a given string with another specified string.
+The `replaceAll` function replaces all occurrences of a specified string in a given string with another specified
+string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `originalString` | `string` | The original string that you want to perform the replacement on. |
+| Name                  | Type     | Description                                                                                                                                 |
+|:----------------------|:---------|:--------------------------------------------------------------------------------------------------------------------------------------------|
+| `originalString`      | `string` | The original string that you want to perform the replacement on.                                                                            |
 | `occurrenceToReplace` | `string` | The `occurrenceToReplace` parameter is a string that represents the occurrence or pattern that you want to replace in the `originalString`. |
-| `replaceWith` | `string` | The `replaceWith` parameter is the string that will replace all occurrences of `occurrenceToReplace` in the `originalString`. |
+| `replaceWith`         | `string` | The `replaceWith` parameter is the string that will replace all occurrences of `occurrenceToReplace` in the `originalString`.               |
 
 #### Returns
 
@@ -1703,9 +1744,9 @@ Checks if two dates are the same (year, month, and day).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `d1` | `Date` | The first date to compare. |
+| Name | Type   | Description                 |
+|:-----|:-------|:----------------------------|
+| `d1` | `Date` | The first date to compare.  |
 | `d2` | `Date` | The second date to compare. |
 
 #### Returns
@@ -1728,10 +1769,10 @@ Sets the time portion of a given date.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `date` | `undefined` \| ``null`` \| `number` \| `Date` | The date object or timestamp to modify. |
-| `time` | `string` | The time string to set in the format 'HH:MM'. |
+| Name   | Type                                          | Description                                   |
+|:-------|:----------------------------------------------|:----------------------------------------------|
+| `date` | `undefined` \| ``null`` \| `number` \| `Date` | The date object or timestamp to modify.       |
+| `time` | `string`                                      | The time string to set in the format 'HH:MM'. |
 
 #### Returns
 
@@ -1753,35 +1794,37 @@ ___
 
 ▸ **sortByObjectValues**\<`T`\>(`keys`, `isAsc`): (`a`: `T`, `b`: `T`) => `number`
 
-The function `sortByObjectValues` sorts an array of objects based on the values of specified nested keys in ascending or descending order.
+The function `sortByObjectValues` sorts an array of objects based on the values of specified nested keys in ascending or
+descending order.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `object` |
+| Name | Type             |
+|:-----|:-----------------|
+| `T`  | extends `object` |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `keys` | `NestedKeyOf`\<`T`\>[] | An array of keys that represent the nested properties of the objects being sorted. |
-| `isAsc` | `boolean` | The `isAsc` parameter is a boolean value that determines whether the sorting order should be ascending (`true`) or descending (`false`). |
+| Name    | Type                   | Description                                                                                                                              |
+|:--------|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| `keys`  | `NestedKeyOf`\<`T`\>[] | An array of keys that represent the nested properties of the objects being sorted.                                                       |
+| `isAsc` | `boolean`              | The `isAsc` parameter is a boolean value that determines whether the sorting order should be ascending (`true`) or descending (`false`). |
 
 #### Returns
 
 `fn`
 
-The function `sortByObjectValues` returns a function that takes two objects `a` and `b` of type `T` and returns a number.
+The function `sortByObjectValues` returns a function that takes two objects `a` and `b` of type `T` and returns a
+number.
 
 ▸ (`a`, `b`): `number`
 
 ##### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+|:-----|:-----|
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 ##### Returns
 
@@ -1790,13 +1833,15 @@ The function `sortByObjectValues` returns a function that takes two objects `a` 
 **`Example`**
 
 ```ts
-example of usage: [{name: 'Amanda', age:18}, {name: 'Victor', age:18}].sort(sortByObjectValues(['name', 'age'], true))
+example
+of
+usage: [{name: 'Amanda', age: 18}, {name: 'Victor', age: 18}].sort(sortByObjectValues(['name', 'age'], true))
 ```
 
 **`Example`**
 
 ```ts
-array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN',...], false))
+array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN', ...], false))
 ```
 
 #### Defined in
@@ -1813,10 +1858,10 @@ The function `sortNumericString` compares two numeric strings and returns a numb
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `string` | The parameter "a" is a string representing the first numeric string to be compared. |
-| `b` | `string` | The parameter "b" is a string representing the second value to be compared. |
+| Name | Type     | Description                                                                         |
+|:-----|:---------|:------------------------------------------------------------------------------------|
+| `a`  | `string` | The parameter "a" is a string representing the first numeric string to be compared. |
+| `b`  | `string` | The parameter "b" is a string representing the second value to be compared.         |
 
 #### Returns
 
@@ -1838,17 +1883,18 @@ The `ternaryOperator` function returns `s1` if `condition` is true, otherwise it
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type      | Description                                                                                                                                                                   |
+|:------------|:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `condition` | `boolean` | A boolean value that represents the condition to be evaluated. If the condition is true, the function will return s1. If the condition is false, the function will return s2. |
-| `s1` | `string` | The parameter `s1` is a string that represents the value to be returned if the condition is true. |
-| `s2` | `string` | The parameter `s2` is a string that represents the value to be returned if the `condition` is false. |
+| `s1`        | `string`  | The parameter `s1` is a string that represents the value to be returned if the condition is true.                                                                             |
+| `s2`        | `string`  | The parameter `s2` is a string that represents the value to be returned if the `condition` is false.                                                                          |
 
 #### Returns
 
 `string`
 
-The ternaryOperator function returns either s2 or s1 based on the value of the condition. If the condition is false, it returns s2. Otherwise, it returns s1.
+The ternaryOperator function returns either s2 or s1 based on the value of the condition. If the condition is false, it
+returns s2. Otherwise, it returns s1.
 
 #### Defined in
 
@@ -1860,12 +1906,13 @@ ___
 
 ▸ **toBoolean**(`value`): `boolean`
 
-The function `toBoolean` converts a string value to a boolean value, considering various possible representations of true like as 'true', '1' or 'y'.
+The function `toBoolean` converts a string value to a boolean value, considering various possible representations of
+true like as 'true', '1' or 'y'.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                        |
+|:--------|:---------|:-------------------------------------------------------------------|
 | `value` | `string` | The `value` parameter is a string that represents a boolean value. |
 
 #### Returns
@@ -1889,8 +1936,8 @@ If the input date is null or undefined, an empty string is returned.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                              | Description                 |
+|:-------|:----------------------------------|:----------------------------|
 | `date` | `undefined` \| ``null`` \| `Date` | The date object to convert. |
 
 #### Returns
@@ -1909,20 +1956,22 @@ ___
 
 ▸ **toLocalDateTime**(`date`, `nowAsDefault?`): `string`
 
-Converts a given `Date`, `number`, `null`, or `undefined` value to a localized string representation of the date and time in "YYYY-MM-DDTHH:MM" format.
+Converts a given `Date`, `number`, `null`, or `undefined` value to a localized string representation of the date and
+time in "YYYY-MM-DDTHH:MM" format.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `date` | `undefined` \| ``null`` \| `number` \| `Date` | `undefined` | The value to be converted. |
-| `nowAsDefault?` | `boolean` | `false` | If `true` and `date` is not provided, the current date and time will be used as the default value. |
+| Name            | Type                                          | Default value | Description                                                                                        |
+|:----------------|:----------------------------------------------|:--------------|:---------------------------------------------------------------------------------------------------|
+| `date`          | `undefined` \| ``null`` \| `number` \| `Date` | `undefined`   | The value to be converted.                                                                         |
+| `nowAsDefault?` | `boolean`                                     | `false`       | If `true` and `date` is not provided, the current date and time will be used as the default value. |
 
 #### Returns
 
 `string`
 
-The localized string representation of the date and time. Returns 'N.d.' if `date` is `null` and `nowAsDefault` is `false`.
+The localized string representation of the date and time. Returns 'N.d.' if `date` is `null` and `nowAsDefault`
+is `false`.
 
 #### Defined in
 
@@ -1939,14 +1988,14 @@ The `toNumber` function converts a value to a number, returning 0 if the value i
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+|:-----|
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `T` | The `value` parameter is of type `T`, which means it can be any type. It represents the value that needs to be converted to a number. |
+| Name    | Type | Description                                                                                                                           |
+|:--------|:-----|:--------------------------------------------------------------------------------------------------------------------------------------|
+| `value` | `T`  | The `value` parameter is of type `T`, which means it can be any type. It represents the value that needs to be converted to a number. |
 
 #### Returns
 
@@ -1968,9 +2017,9 @@ Converts a Blob to a specific Blob type based on the file name extension.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `blob` | `Blob` | The Blob instance to be typed. |
+| Name       | Type     | Description                                    |
+|:-----------|:---------|:-----------------------------------------------|
+| `blob`     | `Blob`   | The Blob instance to be typed.                 |
 | `fileName` | `string` | The name of the file associated with the Blob. |
 
 #### Returns

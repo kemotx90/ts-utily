@@ -1,10 +1,22 @@
 import {
     addDays,
-    dateWith00Mins, dayBetween, getDeltaTimeFromTwoDates,
-    getHoursAndMinutesFromDateAsString, getNextDayOfWeekFromDate,
-    getTomorrow, hoursBetween,
-    instantToDate, isAfter, isBefore, isBetween,
-    monthFromDate, removeDays, sameDate, setTime, toLocalDate
+    dateWith00Mins,
+    dayBetween,
+    getDatesBetween,
+    getDeltaTimeFromTwoDates,
+    getHoursAndMinutesFromDateAsString,
+    getNextDayOfWeekFromDate,
+    getTomorrow,
+    hoursBetween,
+    instantToDate,
+    isAfter,
+    isBefore,
+    isBetween,
+    monthFromDate,
+    removeDays,
+    sameDate,
+    setTime,
+    toLocalDate
 } from "../src/index";
 import {DayOfWeek} from "../src/model/day-of-week-enum";
 import {DeltaDateResult} from "../src/model/delta-date-result";
@@ -238,14 +250,14 @@ describe('hoursBetween', () => {
     });
 
     // Test if function returns correct difference in hours when withAbs is false and d1 < d2
-    it ('should return negative difference in hours between two dates if withAbs is false and d1 < d2', () => {
+    it('should return negative difference in hours between two dates if withAbs is false and d1 < d2', () => {
         const date1 = new Date(2023, 3, 3, 10, 0, 0); // Set date to April 3, 2023 10:00:00
         const date2 = new Date(2023, 3, 3, 14, 0, 0); // Set date to April 3, 2023 14:00:00
         expect(hoursBetween(date1, date2, false)).toBe(-4); // The difference is -4 hours
     });
 
     // Test if function returns correct difference in hours when withAbs is false and d1 > d2
-    it ('should return positive difference in hours between two dates if withAbs is false and d1 > d2', () => {
+    it('should return positive difference in hours between two dates if withAbs is false and d1 > d2', () => {
         const date1 = new Date(2023, 3, 3, 14, 0, 0); // Set date to April 3, 2023 14:00:00
         const date2 = new Date(2023, 3, 3, 10, 0, 0); // Set date to April 3, 2023 10:00:00
         expect(hoursBetween(date1, date2, false)).toBe(4); // The difference is 4 hours
@@ -283,7 +295,7 @@ describe('getTomorrow', () => {
     it('should return tomorrow\'s date when no date is provided', () => {
         const today = new Date();
         const expectedDate = addDays(today, 1);
-        expectedDate.setSeconds(0 , 0);
+        expectedDate.setSeconds(0, 0);
         const tomorrow = getTomorrow();
         tomorrow.setSeconds(0, 0);
 
@@ -479,5 +491,43 @@ describe('getDeltaTimeFromTwoDates', () => {
         }
 
         expect(getDeltaTimeFromTwoDates(date1, date1)).toEqual(expectedResult);
+    });
+});
+
+describe('getDatesBetween function', () => {
+    test('should return array of dates between two dates', () => {
+        const dateStart: Date = new Date(2024, 6, 15);
+        const dateEnd: Date = new Date(2024, 6, 18);
+        const result = getDatesBetween(dateStart, dateEnd);
+
+        expect(result.length).toBe(4);
+        expect(result[0]).toStrictEqual(dateStart);
+        expect(result[result.length - 1]).toStrictEqual(dateEnd);
+    });
+
+    test('should return only one date for the same dates', () => {
+        const dateStart: Date = new Date(2024, 6, 15);
+        const dateEnd: Date = new Date(2024, 6, 15);
+        const result = getDatesBetween(dateStart, dateEnd);
+
+        expect(result.length).toBe(1);
+        expect(result[0]).toStrictEqual(dateStart);
+        expect(result[result.length - 1]).toStrictEqual(dateEnd);
+    });
+
+    test('should return array of dates for number date params', () => {
+        const dateStart: number = Date.parse('2024-07-15');
+        const dateEnd: number = Date.parse('2024-07-18');
+        const result = getDatesBetween(dateStart, dateEnd);
+
+        expect(result.length).toBe(4);
+    });
+
+    test('should return an empty array for non-date parameters', () => {
+        const dateStart: any = null;
+        const dateEnd: any = 'dummy-date';
+        const result = getDatesBetween(dateStart, dateEnd);
+
+        expect(result).toStrictEqual([]);
     });
 });

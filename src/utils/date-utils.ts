@@ -287,3 +287,26 @@ export const getDeltaTimeFromTwoDates = (date1: Date | number, date2: Date | num
         seconds: seconds
     } as DeltaDateResult;
 }
+
+/**
+ * Retrieves an array of dates between two given dates.
+ *
+ * @param {Date | number} dateStart - The start date of the range.
+ * @param {Date | number} dateEnd - The end date of the range.
+ * @returns {Array<Date>} - An array of dates between the start and end dates, inclusive.
+ */
+export const getDatesBetween = (dateStart: Date | number, dateEnd: Date | number): Array<Date> => {
+    if (notPresent(dateStart) || notPresent(dateEnd)) return [];
+
+    let dateArray: Date[] = [];
+    let currentDate = new Date(dateStart);
+    const lastDate = new Date(dateEnd);
+
+    while (currentDate.getTime() < lastDate.getTime()) {
+        dateArray.push(new Date(currentDate));
+        currentDate = addDays(currentDate, 1);
+    }
+
+    dateArray.push(new Date(lastDate));
+    return dateArray;
+}
