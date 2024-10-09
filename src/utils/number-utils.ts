@@ -24,12 +24,16 @@ export const isNumber = <T>(value: T): boolean => {
     }
 }
 
+
 /**
- * The function calculates the percentage of a value in relation to a total value.
- * @param {number} value - The value parameter represents the specific value that you want to calculate the percentage of. It is a number that you want to find the percentage of in relation to the totalValue.
- * @param {number} totalValue - The total value represents the maximum value or the total amount that you want to calculate the percentage of.
- * @returns a number, which is the calculated percentage value.
+ * Calculates the percentage of a value relative to a total value, rounded to a specified number of decimal places.
+ *
+ * @param {number} value - The part value to calculate the percentage for.
+ * @param {number} totalValue - The total value that represents 100%.
+ * @param {number} [decimals=0] - The number of decimal places to round the result to.
+ * @returns {number} - The calculated percentage.
  */
-export const percentage = (value: number, totalValue: number): number => {
-    return Math.round((value / totalValue) * 100);
+export const percentage = (value: number, totalValue: number, decimals: number = 0): number => {
+    const factor = Math.pow(10, decimals);
+    return Math.round((value / totalValue) * 100 * factor) / factor;
 }
