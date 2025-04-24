@@ -17,6 +17,7 @@ export const removeNullOrUndefinedFieldsFromObject = <T>(value: T): T | undefine
  * @returns The `removeEmptyFields` function returns the modified object with all empty fields removed.
  */
 const removeEmptyFields = (obj: any) => {
+    if (notPresent(obj)) return obj;
     Object.keys(obj).forEach(key => {
         if (obj[key] && typeof obj[key] === "object") {
             if ((Object.keys(obj[key]).length === 0 && obj[key].constructor === Object) || obj[key].length === 0) {

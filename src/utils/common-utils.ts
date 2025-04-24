@@ -15,7 +15,7 @@ const isNullOrUndefined = <T>(val: T) => {
 export const present = <T>(...args: T[]): boolean => {
     if (isNullOrUndefined(args)) return false;
     const params = args.reduce((a: T[], v: T) => a.concat(v), []);
-    return params.every((obj: any) => !isNullOrUndefined(obj));
+    return !params.some((obj: any) => isNullOrUndefined(obj));
 }
 
 /**

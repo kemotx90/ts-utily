@@ -4,7 +4,7 @@ import {NestedKeyOf} from "../model/nested-key-of";
 const getNestedObject = (nestedObj: any, path: string): any => {
     let pathArr = path.split('.');
     pathArr = pathArr.length > 0 ? pathArr : [path];
-    return pathArr.reduce((obj, key) => (present(obj, obj[key])) ? obj[key] : undefined, nestedObj);
+    return pathArr.reduce((obj, key) => (!!obj && present(obj, obj[key])) ? obj[key] : undefined, nestedObj);
 }
 
 /**

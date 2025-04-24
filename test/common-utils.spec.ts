@@ -8,6 +8,7 @@ test('present', () => {
     expect(present({})).toBe(true);
     expect(present('hola')).toBe(true);
     expect(present(1,2,0,5)).toBe(true);
+    expect(present(1,2,null,5)).toBe(false);
 });
 
 test('notPresent', () => {

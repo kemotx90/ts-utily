@@ -8,6 +8,7 @@ import {notPresent} from "./common-utils";
  * @returns {string} - The corresponding MIME type.
  */
 export const getMimeTypeFromExtension = (extension: string): string => {
+    if (notPresent(extension)) return 'no_extension';
     return (MimeTypeEnum as any)[`TYPE_${extension.toUpperCase().trim()}`];
 }
 
