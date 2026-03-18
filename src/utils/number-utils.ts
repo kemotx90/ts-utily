@@ -1,4 +1,5 @@
 import {present} from "./common-utils";
+import {PercentageOptions} from "../model/percentage-options";
 
 
 /**
@@ -26,14 +27,20 @@ export const isNumber = <T>(value: T): boolean => {
 
 
 /**
- * Calculates the percentage of a value relative to a total value, rounded to a specified number of decimal places.
+ * Calculates the percentage of a value with respect to a total value.
  *
  * @param {number} value - The part value to calculate the percentage for.
  * @param {number} totalValue - The total value that represents 100%.
- * @param {number} [decimals=0] - The number of decimal places to round the result to.
- * @returns {number} - The calculated percentage.
+ * @param {PercentageOptions} [options] - Optional settings for the calculation.
+ * @param {number} [options.decimals=0] - The number of decimal places to round the result to.
+ * @param {number} [options.toZero=0] - The fallback value to return if either the value and totalValue are 0.
+ * @param {'round' | 'ceil' | 'floor'} [options.approximate='round'] - The approximation method to use for rounding.
+ * @returns {number} The calculated percentage, rounded to the specified number of decimals.
  */
-export const percentage = (value: number, totalValue: number, decimals: number = 0): number => {
+export const percentage = (value: number, totalValue: number, options?: PercentageOptions): number => {
+    const decimals: number = options?.decimals ?? 0;
     const factor = Math.pow(10, decimals);
-    return Math.round((value / totalValue) * 100 * factor) / factor;
+
+    if (value === 0 && totalValue === 0) return options?.toZero ?? 0;
+    return Math[options?.approximate ?? 'round']((value / totalValue) * 100 * factor) / factor;
 }

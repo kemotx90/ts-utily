@@ -1,5 +1,5 @@
 import {present} from "./common-utils";
-import {NestedKeyOf} from "../model/nested-key-of";
+import {NestedKeyOfWithSuggest} from "../model/nested-key-of";
 
 const getNestedObject = (nestedObj: any, path: string): any => {
     let pathArr = path.split('.');
@@ -20,18 +20,18 @@ const compare = (a: number | string, b: number | string, isAsc: boolean) => {
 
 /**
  * The function `sortByObjectValues` sorts an array of objects based on the values of specified nested keys in ascending or descending order.
- * @param {(NestedKeyOf<T>)[]} keys - An array of keys that represent the nested properties of the objects being sorted.
+ * @param {(NestedKeyOfWithSuggest<T>)[]} keys - An array of keys that represent the nested properties of the objects being sorted.
  * @param {boolean} isAsc - The `isAsc` parameter is a boolean value that determines whether the sorting order should be ascending (`true`) or descending (`false`).
  * @returns The function `sortByObjectValues` returns a function that takes two objects `a` and `b` of type `T` and returns a number.
  *
  * @example
- * example of usage: [{name: 'Amanda', age:18}, {name: 'Victor', age:18}].sort(sortByObjectValues(['name', 'age'], true))
+ * const sortedArray = [{name: 'Amanda', age:18}, {name: 'Victor', age:18}].sort(sortByObjectValues(['name', 'age'], true));
  * @example
  * array.sort(sortByObjectValues(['ele1', 'ele2' 'eleN',...], false))
  */
-export function sortByObjectValues<T extends object>(keys: (NestedKeyOf<T>)[], isAsc: boolean): (a: T, b: T) => number {
+export function sortByObjectValues<T extends object>(keys: (NestedKeyOfWithSuggest<T>)[], isAsc: boolean): (a: T, b: T) => number {
     return function (a: T, b: T) {
-        const firstKey: NestedKeyOf<T> = keys[0];
+        const firstKey: NestedKeyOfWithSuggest<T> = keys[0];
 
         const valA = getNestedObject(a, firstKey.toString());
         const valB = getNestedObject(b, firstKey.toString());

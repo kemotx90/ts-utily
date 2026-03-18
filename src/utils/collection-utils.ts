@@ -29,7 +29,7 @@ export const isNotEmptyCollection = <T>(collection: T[] | undefined | null): boo
 export const at = <T>(collection: T[] | undefined | null, index: number): T | undefined => {
     if (isEmptyCollection(collection)) return undefined;
     if ((collection!.length - 1) < index) return undefined;
-    return collection!.at(index);
+    return collection![index];
 }
 
 /**

@@ -46,7 +46,7 @@ export const typizeBlobFromFileName = (blob: Blob, fileName: string): Blob | und
  * @param base64 - The base64 string to convert.
  * @returns The Uint8Array representing the base64 string.
  */
-export const createUint8ArrayFromBase64 = (base64: string): Uint8Array => {
+export const createUint8ArrayFromBase64 = (base64: string): Uint8Array<ArrayBuffer> => {
     const binaryString = atob(base64);
     const len = binaryString.length;
     const bytes = new Uint8Array(len);

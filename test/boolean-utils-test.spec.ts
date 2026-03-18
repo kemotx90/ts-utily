@@ -7,6 +7,7 @@ test('boolean string true, TRUE, Y, y, 1', () => {
     expect(toBoolean('Y')).toBe(true);
     expect(toBoolean('y')).toBe(true);
     expect(toBoolean('1')).toBe(true);
+    expect(toBoolean(1)).toBe(true);
     expect(toBoolean(null!)).toBe(false);
     expect(toBoolean(undefined!)).toBe(false);
 });
@@ -17,6 +18,7 @@ test('boolean string false, FALSE, F, f, 0', () => {
     expect(toBoolean('F')).toBe(false);
     expect(toBoolean('f')).toBe(false);
     expect(toBoolean('0')).toBe(false);
+    expect(toBoolean(0)).toBe(false);
 });
 
 test('not boolean string {}, X, 12, test', () => {

@@ -1,0 +1,30 @@
+{
+  "plugin": [
+    "typedoc-plugin-markdown"
+  ],
+  "entryPoints": [
+    "src/index.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "out": "./docs",
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true,
+    "includeFolders": true
+  },
+  "includeHierarchySummary": true,
+  "mergeReadme": true,
+  "useCodeBlocks": true,
+  "cleanOutputDir": true,
+  "fileExtension": ".md",
+  "useHTMLAnchors": true,
+  "anchorPrefix": "anchor-",
+  "tableColumnSettings": {
+    "hideDefaults": true,
+    "hideInherited": true
+  },
+  "hidePageTitle": true,
+  "hideGenerator": true,
+  "hidePageHeader": true,
+  "hideBreadcrumbs": true
+}

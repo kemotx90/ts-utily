@@ -308,7 +308,7 @@ export const getDatesBetween = (dateStart: Date | number, dateEnd: Date | number
         currentDate = addDays(currentDate, 1);
     }
 
-    if (dateArray.length > 1 && sameDate(new Date(lastDate), dateArray.at(dateArray.length - 1)!)) {
+    if (dateArray.length > 1 && sameDate(new Date(lastDate), dateArray[dateArray.length - 1]!)) {
         dateArray.pop();
         dateArray.push(new Date(lastDate));
     } else dateArray.push(new Date(lastDate));

@@ -148,7 +148,7 @@ const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base
  * @param {string | undefined} string - The string containing placeholders.
  * @param {any[]} placeholders - An array of objects containing key-value pairs, where the key represents a placeholder and the value is the replacement value.
  * @returns {string | undefined} - The resulting string with replaced placeholders, or undefined if the input string is undefined.
- * @example populateTemplate('Replace my text {myReplacePlaceholder}', [{name: 'Valery', age: 20, myReplacePlaceholder: 'test this'}, {name: 'Marcus', age: 21}]) => Replace my text test this
+ * @example const obj = populateTemplate('Replace my text {myReplacePlaceholder}', [{name: 'Valery', age: 20, myReplacePlaceholder: 'test this'}, {name: 'Marcus', age: 21}]); //Replace my text test this
  */
 export const populateTemplate = (string: string | undefined, placeholders: any[]): string | undefined => {
     const placeholderRegex: RegExp = /\{(\w+?)}/g;

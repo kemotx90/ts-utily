@@ -38,6 +38,14 @@ test('is not number {}, test, u12, 1.2n', () => {
  * rounded to a specified number of decimal places.
  */
 
+test('percentage of 0 out of 0 is 0%', () => {
+    expect(percentage(0, 0, {toZero: 0})).toBe(0);
+});
+
+test('percentage of 0 out of 0 is 100%', () => {
+    expect(percentage(0, 0, {toZero: 100})).toBe(100);
+});
+
 test('percentage of 10 out of 100 is 10%', () => {
     expect(percentage(10, 100)).toBe(10);
 });
@@ -47,11 +55,11 @@ test('percentage of 150.34 out of 300.22 is around 50%', () => {
 });
 
 test('percentage of 322 out of 544 is around 59.19 with 2 decimals', () => {
-    expect(percentage(322, 544, 2)).toBeCloseTo(59.19, 2);
+    expect(percentage(322, 544, {decimals: 2})).toBeCloseTo(59.19, 2);
 });
 
 test('percentage of 1 out of 3 is around 33.33 with 2 decimals', () => {
-    expect(percentage(1, 3, 2)).toBeCloseTo(33.33, 2);
+    expect(percentage(1, 3, {decimals: 2})).toBeCloseTo(33.33, 2);
 });
 
 test('percentage of 25 out of 25 is 100%', () => {
@@ -72,4 +80,16 @@ test('percentage with negative value and total', () => {
 
 test('percentage with mixed positive value and negative total', () => {
     expect(percentage(50, -200)).toBe(-25);
+});
+
+test('percentage of 1 out of 3 is around 33.33 with 2 decimals approximate round', () => {
+    expect(percentage(1, 3, {decimals: 1, approximate: "round"})).toBeCloseTo(33.3, 2);
+});
+
+test('percentage of 1 out of 3 is around 33.33 with 2 decimals approximate ceil', () => {
+    expect(percentage(1, 3, {decimals: 1, approximate: "ceil"})).toBeCloseTo(33.4, 2);
+});
+
+test('percentage of 1 out of 3 is around 33.33 with 2 decimals approximate floor', () => {
+    expect(percentage(1, 3, {decimals: 1, approximate: "floor"})).toBeCloseTo(33.3, 2);
 });
